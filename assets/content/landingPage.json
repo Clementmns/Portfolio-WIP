@@ -1,0 +1,18 @@
+{
+   "heroBanner": {
+      "scroll": {
+         "fr": "Scrollez pour me découvrir",
+         "en": "Scroll to discover more"
+      },
+      "desc": {
+         "p": {
+            "fr": "Salut, je suis Clément Omnès, je conçois des interfaces et des sites web de A à Z, à la fois en tant que développeur et designer créatif",
+            "en": "I am Clément Omnès, I am crafting interfaces and websites from 0 to hero as a creative developer & designer."
+         },
+         "cta": {
+            "fr": "à propos",
+            "en": "about"
+         }
+      }
+   }
+}

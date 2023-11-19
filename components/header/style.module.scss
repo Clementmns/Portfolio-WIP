@@ -1,0 +1,64 @@
+.header {
+   padding: 30px;
+   position: fixed;
+   display: flex;
+   z-index: 50;
+   justify-content: flex-end;
+   width: 100%;
+   @media screen and (orientation: portrait) {
+      justify-content: space-between;
+      flex-direction: row;
+   }
+
+   .button {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background-color: #455ce9;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+         transform: scale(1.5);
+      }
+   }
+
+   .burger {
+      width: 100%;
+      &::after,
+      &::before {
+         content: "";
+         display: block;
+         height: 1px;
+         width: 40%;
+         margin: auto;
+         position: relative;
+         transition: transform 0.3s;
+      }
+
+      &::after {
+         top: -5px;
+      }
+
+      &::before {
+         top: 5px;
+      }
+   }
+
+   .burgerActive {
+      &::after {
+         transform: rotate(45deg);
+         top: -1px;
+      }
+
+      &::before {
+         transform: rotate(-45deg);
+         top: 0px;
+      }
+   }
+}
+
+.font-hero {
+   font-family: "Rafgins";
+}

@@ -1,0 +1,34 @@
+{
+   "header": {
+      "links": {
+         "home": {
+            "title": {
+               "fr": "accu<span class='font-hero'>e</span>il",
+               "en": "ho<span class='font-hero'>m</span>e"
+            }
+         },
+         "playbook": {
+            "title": {
+               "fr": "pla<span class='font-hero'>y</span>book",
+               "en": "pla<span class='font-hero'>y</span>book"
+            }
+         },
+         "about": {
+            "title": {
+               "fr": "à pr<span class='font-hero'>o</span>pos",
+               "en": "ab<span class='font-hero'>o</span>ut"
+            }
+         }
+      }
+   },
+   "footer": {
+      "title": {
+         "fr": "Mieux ensemble",
+         "en": "Better together"
+      },
+      "credits": {
+         "fr": "Fait avec passion",
+         "en": "Made with passion"
+      }
+   }
+}
