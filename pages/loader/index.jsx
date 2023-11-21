@@ -2,11 +2,30 @@
 import styles from "./style.module.scss";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { opacity, slideUp } from "./anim";
 
 const words = ["Hello", "Bonjour"];
 
 export default function Loader() {
+   const opacity = {
+      initial: {
+         opacity: 0,
+      },
+      enter: {
+         opacity: 0.75,
+         transition: { duration: 1, delay: 0.2 },
+      },
+   };
+
+   const slideUp = {
+      initial: {
+         top: 0,
+      },
+      exit: {
+         top: "-100vh",
+         transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.2 },
+      },
+   };
+
    const [index, setIndex] = useState(0);
    const [dimension, setDimension] = useState({ width: 0, height: 0 });
 
