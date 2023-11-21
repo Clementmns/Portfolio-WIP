@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Loader from "./loader";
 import "./global.scss";
 import Lenis from "@studio-freight/lenis";
-import { Analytics } from "@vercel/analytics";
+import { Analytics } from "@vercel/analytics/react";
 
 export const useLoadThemeAndLanguage = () => {
    // loadThemeAndLanguage.js
