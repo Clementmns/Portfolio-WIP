@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Loader from "./loader";
 import "./global.scss";
 import Lenis from "@studio-freight/lenis";
+import { Analytics } from "@vercel/analytics";
 
 export const useLoadThemeAndLanguage = () => {
    // loadThemeAndLanguage.js
@@ -99,6 +100,7 @@ const App = ({ Component, pageProps }) => {
                )}
             </motion.div>
          </AnimatePresence>
+         <Analytics />
       </>
    );
 };
