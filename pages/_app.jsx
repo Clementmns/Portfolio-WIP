@@ -4,7 +4,6 @@ import { useState, useEffect } from "react";
 import Loader from "./loader";
 import "./global.scss";
 import Lenis from "@studio-freight/lenis";
-import Script from "next/script";
 
 export const useLoadThemeAndLanguage = () => {
    // loadThemeAndLanguage.js
@@ -71,18 +70,6 @@ const App = ({ Component, pageProps }) => {
 
    return (
       <>
-         <Script
-            strategy="afterInteractive"
-            src="https://www.googletagmanager.com/gtag/js?id=G-6M8P005GRZ"
-         ></Script>
-         <Script id="google-analytics" strategy="afterInteractive">
-            {`
-               window.dataLayer = window.dataLayer || [];
-               function gtag(){dataLayer.push(arguments);}
-               gtag('js', new Date());
-               gtag('config', 'G-6M8P005GRZ');
-            `}
-         </Script>
          <AnimatePresence mode="wait">
             <motion.div className="bg-background-light dark:bg-background-dark">
                <AnimatePresence wait>
