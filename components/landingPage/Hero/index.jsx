@@ -1,9 +1,11 @@
 import React, { useRef } from "react";
 import { useEffect } from "react";
-import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import gsap from "gsap/dist/gsap";
 
 function LandingHeroBanner() {
-   gsap.registerPlugin("scrollTrigger");
+   gsap.registerPlugin(ScrollTrigger);
+
    const parallaxRef = useRef();
    useEffect(() => {
       const startParallax =
