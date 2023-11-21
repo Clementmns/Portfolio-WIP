@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Loader from "./loader";
 import "./global.scss";
 import Lenis from "@studio-freight/lenis";
+import Script from "next/script";
 
 export const useLoadThemeAndLanguage = () => {
    // loadThemeAndLanguage.js
@@ -69,35 +70,49 @@ const App = ({ Component, pageProps }) => {
    const { isLoading, isLoadingPage } = useLoadThemeAndLanguage();
 
    return (
-      <AnimatePresence mode="wait">
-         <motion.div>
-            <AnimatePresence wait>
-               {isLoading && <Loader key="loader" />}
-            </AnimatePresence>
-            {!isLoadingPage && (
-               <AnimatePresence waitBeforeExit>
-                  <motion.div
-                     className="slide-in"
-                     key="slide-in"
-                     initial={{ scaleY: 0 }}
-                     animate={{ scaleY: 0 }}
-                     exit={{ scaleY: 1 }}
-                     transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-                  ></motion.div>
-                  <Component {...pageProps} />
-                  // TODO: Changer transition entre les pages avec CURVE
-                  <motion.div
-                     className="slide-out"
-                     key="slide-out"
-                     initial={{ scaleY: 1 }}
-                     animate={{ scaleY: 0 }}
-                     exit={{ scaleY: 0 }}
-                     transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-                  ></motion.div>
+      <>
+         <Script
+            strategy="afterInteractive"
+            src="https://www.googletagmanager.com/gtag/js?id=G-6M8P005GRZ"
+         ></Script>
+         <Script id="google-analytics" strategy="afterInteractive">
+            {`
+               window.dataLayer = window.dataLayer || [];
+               function gtag(){dataLayer.push(arguments);}
+               gtag('js', new Date());
+               gtag('config', 'G-6M8P005GRZ');
+            `}
+         </Script>
+         <AnimatePresence mode="wait">
+            <motion.div className="bg-background-light dark:bg-background-dark">
+               <AnimatePresence wait>
+                  {isLoading && <Loader key="loader" />}
                </AnimatePresence>
-            )}
-         </motion.div>
-      </AnimatePresence>
+               {!isLoadingPage && (
+                  <AnimatePresence waitBeforeExit>
+                     <motion.div
+                        className="slide-in"
+                        key="slide-in"
+                        initial={{ scaleY: 0 }}
+                        animate={{ scaleY: 0 }}
+                        exit={{ scaleY: 1 }}
+                        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+                     ></motion.div>
+                     <Component {...pageProps} />
+                     // TODO: Changer transition entre les pages avec CURVE
+                     <motion.div
+                        className="slide-out"
+                        key="slide-out"
+                        initial={{ scaleY: 1 }}
+                        animate={{ scaleY: 0 }}
+                        exit={{ scaleY: 0 }}
+                        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+                     ></motion.div>
+                  </AnimatePresence>
+               )}
+            </motion.div>
+         </AnimatePresence>
+      </>
    );
 };
 

@@ -56,6 +56,7 @@ function LandingProjects() {
                pin: pinAnimation,
                animation: animation,
                scrub: true,
+               ease: "power.inOut",
             });
          });
 
@@ -110,35 +111,37 @@ function LandingProjects() {
    // TODO: Comprendre comment faire une page projet perso
    const projects = [
       {
+         id: 0,
          title: "AppTrackr",
          stacks: ["PHP", "MYSQL"],
          img: "/projectsThumbnails/download.jpeg",
-         href: "/projects/apptrackr",
       },
       {
+         id: 1,
          title: "Portfolio 2024",
          stacks: ["Next.JS", "React.JS", "GSAP", "SCSS"],
          img: "/projectsThumbnails/images.png",
-         href: "/projects/portfolio-2024",
       },
       {
+         id: 2,
          title: "AppTrackr",
          stacks: ["PHP", "MYSQL"],
          img: "/projectsThumbnails/05.jpg",
-         href: "/projects/apptrackr",
       },
    ];
 
    return (
-      <div className="mt-52">
-         <div className="flex gap-10 items-end ">
-            <h4 className="text-background-dark dark:text-background-light lg:text-9xl md:text-7xl sm:text-5xl text-3xl">
-               Wor
-               <span className="font-hero text-primary-light dark:text-primary-dark">
-                  k
-               </span>
-               .
-            </h4>
+      <div className="mt-52 mb-52">
+         <div className="flex gap-10 items-end justify-center">
+            <div className="w-11/12 justify-start">
+               <h4 className="text-background-dark dark:text-background-light lg:text-9xl md:text-7xl sm:text-5xl text-3xl">
+                  Wor
+                  <span className="font-hero text-primary-light dark:text-primary-dark">
+                     k
+                  </span>
+                  .
+               </h4>
+            </div>
          </div>
          {isPortrait ? (
             // Affichage en mode portrait
@@ -149,16 +152,16 @@ function LandingProjects() {
                         key={index}
                         className="text-3xl flex flex-col justify-center w-full items-center"
                      >
-                        <a
-                           href={project.href}
+                        <Link
+                           href={`/projects/${project.id}`}
                            className="sm:w-96 sm:h-96 w-44 h-44 flex justify-center m-auto"
                         >
                            <img
                               src={project.img}
                               alt=""
-                              className="w-full h-full object-cover rounded-md"
+                              className="w-full h-full object-cover rounded-lg cursor-pointer"
                            />
-                        </a>
+                        </Link>
                         <div className="flex flex-wrap gap-2 justify-center mt-10">
                            {project.stacks.map((stack, stackIndex) => (
                               <Stacks key={stackIndex}>{stack}</Stacks>
@@ -167,12 +170,12 @@ function LandingProjects() {
                         <h3 className="lg:text-5xl md:text-4xl sm:text-3xl text-2xl text-background-dark dark:text-background-light text-center mt-4">
                            {project.title}
                         </h3>
-                        <a
-                           href={project.href}
+                        <Link
+                           href={`/projects/${project.id}`}
                            className="w-48 mt-16 bg-primary-light dark:bg-primary-dark h-12 rounded-full text-background-light dark:!text-background-dark text-xl flex justify-center items-center"
                         >
                            <p className="text-center">view more</p>
-                        </a>
+                        </Link>
                      </div>
                   ))}
                </div>
@@ -212,6 +215,7 @@ function LandingProjects() {
                            {projects.map((project, index) => (
                               <div
                                  className="photo absolute w-full h-full"
+                                 data-speed="1"
                                  style={{ zIndex: 10 - index }}
                                  onMouseEnter={(e) => {
                                     manageModal(
@@ -231,11 +235,11 @@ function LandingProjects() {
                                  }}
                                  key={index}
                               >
-                                 <Link href={project.href}>
+                                 <Link href={`/projects/${project.id}`}>
                                     <img
                                        src={project.img}
                                        alt=""
-                                       className="object-cover w-full h-full rounded-2xl"
+                                       className="object-cover w-full h-full rounded-lg cursor-pointer"
                                     />
                                  </Link>
                               </div>

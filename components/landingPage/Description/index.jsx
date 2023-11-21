@@ -34,7 +34,7 @@ function LandingDescription() {
    }, []);
 
    return (
-      <div className="h-screen flex justify-center items-center w-full">
+      <div className="h-[50vh] flex justify-center items-center w-full">
          <div className="flex justify-center items-center flex-col h-full w-8/12 text-center">
             <div
                className="dark:text-background-light text-background-dark lg:text-6xl md:text-5xl sm:text-3xl text-2xl"
@@ -54,9 +54,14 @@ function LandingDescription() {
                      {word}{" "}
                   </span>
                ))}
-               <Link href={"/about"} className="relative top-20">
-                  <HoverEffect text={descCTA} />
-               </Link>
+               <div className="flex justify-center">
+                  <Link
+                     href={"/about"}
+                     className="relative top-20 flex justify-center w-[30vw]"
+                  >
+                     <HoverEffect text={descCTA} width={"30vw"} />
+                  </Link>
+               </div>
             </div>
          </div>
       </div>

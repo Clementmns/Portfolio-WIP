@@ -1,29 +1,64 @@
 import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 
-export default function HoverEffect({ text }) {
+export default function HoverEffect({ text, color, width, link }) {
    return (
-      <div className="w-70 text-center">
-         <motion.div
-            className="relative cursor-pointer flex flex-col overflow-hidden h-[5rem] z-0"
-            whileHover="hover"
-         >
-            <div>{splitText(text)}</div>
-            <div className="mt-1">{splitText(text)}</div>
-         </motion.div>
+      <div className={`w-[${width}] text-center`}>
+         {link ? (
+            <a href={link}>
+               <motion.div
+                  className="relative cursor-pointer flex flex-col overflow-hidden h-[5rem] portrait:h-[2.5rem] z-0"
+                  whileHover="hover"
+               >
+                  <div>{splitText(text, color)}</div>
+                  <div className="mt-1">{splitText(text, color)}</div>
+               </motion.div>
+            </a>
+         ) : (
+            <motion.div
+               className="relative cursor-pointer flex flex-col overflow-hidden h-[5rem] portrait:h-[2.5rem] z-0"
+               whileHover="hover"
+            >
+               <div>{splitText(text, color)}</div>
+               <div className="mt-1">{splitText(text, color)}</div>
+            </motion.div>
+         )}
       </div>
    );
 }
 
-function splitText(text) {
+function splitText(text, color) {
+   const [isPortrait, setIsPortrait] = useState(
+      window.matchMedia("(orientation: portrait)").matches
+   );
+
+   useEffect(() => {
+      const checkOrientation = () => {
+         setIsPortrait(window.matchMedia("(orientation: portrait)").matches);
+      };
+
+      // Ajoute un écouteur pour détecter les changements d'orientation
+      window.addEventListener("resize", checkOrientation);
+
+      // Nettoie l'écouteur lors du démontage du composant
+      return () => {
+         window.removeEventListener("resize", checkOrientation);
+      };
+   }, []);
+
    return text.split("").map((char, index) => (
       <motion.span
          key={index}
-         className="word-wrapper inline-block dark:text-background-light text-background-dark text-7xl font-hero h-full"
+         className={`word-wrapper inline-block text-7xl portrait:text-3xl h-full leading-2 font-hero ${
+            color == "inverse"
+               ? "dark:text-background-dark text-background-light "
+               : "dark:text-background-light text-background-dark"
+         }`}
          variants={{
             hover: {
-               y: [0, -80],
+               y: !isPortrait ? [0, -80] : [0, -40],
                transition: {
-                  delay: index * 0.05,
+                  delay: index * 0.03,
                   duration: 0.3,
                },
             },
