@@ -196,7 +196,7 @@ function LandingProjects() {
                         {projects.map((project, index) => (
                            <div
                               key={index}
-                              className="text-white text-3xl h-screen flex flex-col justify-center w-4/5"
+                              className="text-white text-3xl h-screen flex flex-col justify-center w-4/5 "
                            >
                               <div className="flex flex-wrap gap-2">
                                  {project.stacks.map((stack, stackIndex) => (
