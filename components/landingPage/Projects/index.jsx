@@ -108,7 +108,7 @@ function LandingProjects() {
       });
    }, [isPortrait]);
 
-   // TODO: Comprendre comment faire une page projet perso
+   // TODO: Remplir avec de vrais projets
    const projects = [
       {
          id: 0,
@@ -154,7 +154,7 @@ function LandingProjects() {
                      >
                         <Link
                            href={`/projects/${project.id}`}
-                           className="sm:w-96 sm:h-96 w-44 h-44 flex justify-center m-auto"
+                           className="w-[80vw] h-[100vw] flex justify-center m-auto"
                         >
                            <img
                               src={project.img}

@@ -46,7 +46,7 @@ function LandingHeroBanner() {
             </h1>
          </div>
          <div
-            className="layer w-[50vw] h-[100vh] mt-28 portrait:w-[70vw] portrait:h-[80vh]"
+            className="layer w-[50vw] h-[100vh] mt-28 portrait:w-[95vw] portrait:h-[80vh]"
             data-speed="1"
          >
             <img
