@@ -1,9 +1,7 @@
-import { useRouter } from "next/router";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import Loader from "./loader";
 import "./global.scss";
-import Lenis from "@studio-freight/lenis";
 import { Analytics } from "@vercel/analytics/react";
 
 export const useLoadThemeAndLanguage = () => {
@@ -23,23 +21,6 @@ export const useLoadThemeAndLanguage = () => {
          setIsLoading(false);
          simulateContentLoading();
       }, 2000);
-
-      const lenis = new Lenis({
-         duration: 1.1,
-         easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
-         direction: "vertical",
-         gestureDirection: "vertical",
-         smooth: true,
-         smoothTouch: false,
-         touchMultiplier: 2,
-      });
-
-      function raf(time) {
-         lenis.raf(time);
-         requestAnimationFrame(raf);
-      }
-
-      requestAnimationFrame(raf);
    }, []);
 
    useEffect(() => {
@@ -66,12 +47,11 @@ export const useLoadThemeAndLanguage = () => {
 };
 
 const App = ({ Component, pageProps }) => {
-   const router = useRouter();
    const { isLoading, isLoadingPage } = useLoadThemeAndLanguage();
 
    return (
       <>
-         <AnimatePresence mode="wait">
+         <AnimatePresence mode="wait" className="bg-background-light dark:">
             <motion.div className="bg-background-light dark:bg-background-dark">
                <AnimatePresence wait>
                   {isLoading && <Loader key="loader" />}

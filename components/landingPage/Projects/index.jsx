@@ -108,7 +108,7 @@ function LandingProjects() {
       });
    }, [isPortrait]);
 
-   // TODO: Comprendre comment faire une page projet perso
+   // TODO: Remplir avec de vrais projets
    const projects = [
       {
          id: 0,
