@@ -10,7 +10,7 @@ export default function RootLayout({ children }) {
    return (
       <html lang="fr">
          <head>
-            <link rel="shortcut icon" href="/icon.png" type="image/x-icon" />
+            <link rel="shortcut icon" href="/fav.ico" type="image/x-icon" />
          </head>
          <body>
             <ServerNav>{children}</ServerNav>
