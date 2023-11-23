@@ -1,7 +1,8 @@
+"use client";
+import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import Loader from "./loader";
-import "./global.scss";
 import { Analytics } from "@vercel/analytics/react";
 
 export const useLoadThemeAndLanguage = () => {
@@ -50,9 +51,8 @@ console.log(
    "background: #2D232E; color: #FF521C;"
 );
 
-const App = ({ Component, pageProps }) => {
+function ServerNav({ children }) {
    const { isLoading, isLoadingPage } = useLoadThemeAndLanguage();
-
    return (
       <>
          <AnimatePresence mode="wait" className="bg-background-light dark:">
@@ -62,24 +62,8 @@ const App = ({ Component, pageProps }) => {
                </AnimatePresence>
                {!isLoadingPage && (
                   <AnimatePresence waitBeforeExit>
-                     <motion.div
-                        className="slide-in"
-                        key="slide-in"
-                        initial={{ scaleY: 0 }}
-                        animate={{ scaleY: 0 }}
-                        exit={{ scaleY: 1 }}
-                        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-                     ></motion.div>
-                     <Component {...pageProps} />
+                     {children}
                      // TODO: Changer transition entre les pages avec CURVE
-                     <motion.div
-                        className="slide-out"
-                        key="slide-out"
-                        initial={{ scaleY: 1 }}
-                        animate={{ scaleY: 0 }}
-                        exit={{ scaleY: 0 }}
-                        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-                     ></motion.div>
                   </AnimatePresence>
                )}
             </motion.div>
@@ -87,6 +71,6 @@ const App = ({ Component, pageProps }) => {
          <Analytics />
       </>
    );
-};
+}
 
-export default App;
+export default ServerNav;
