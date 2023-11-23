@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
          <head>
             <link rel="shortcut icon" href="/fav.ico" type="image/x-icon" />
          </head>
-         <body>
+         <body className="w-full">
             <ServerNav>{children}</ServerNav>
          </body>
       </html>

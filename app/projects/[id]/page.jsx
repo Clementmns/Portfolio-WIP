@@ -162,7 +162,7 @@ export default function ProjectDetail() {
       <>
          <Page>
             <div
-               className=" startParallax flex items-center flex-col w-full"
+               className=" startParallax flex items-center flex-col"
                ref={parallaxRef}
             >
                <div className=" w-11/12">

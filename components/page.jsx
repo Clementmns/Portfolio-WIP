@@ -5,7 +5,7 @@ export default function Page({ children }) {
    return (
       <>
          <Header />
-         <main className="font-basic dark:bg-background-dark bg-background-light w-full h-full">
+         <main className="font-basic dark:bg-background-dark bg-background-light h-full">
             {children}
          </main>
          <Footer />
