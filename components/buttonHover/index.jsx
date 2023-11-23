@@ -1,9 +1,10 @@
+"use client";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
 export default function HoverEffect({ text, color, width, link }) {
    return (
-      <div className={`w-[${width}] text-center`}>
+      <div className={`w-[${width}] text-center opacity-100`}>
          {link ? (
             <a href={link}>
                <motion.div
@@ -49,7 +50,7 @@ function splitText(text, color) {
    return text.split("").map((char, index) => (
       <motion.span
          key={index}
-         className={`word-wrapper inline-block text-7xl portrait:text-3xl h-full leading-2 font-hero ${
+         className={`wordwrapper-footer inline-block text-7xl portrait:text-3xl h-full leading-2 font-hero ${
             color == "inverse"
                ? "dark:text-background-dark text-background-light "
                : "dark:text-background-light text-background-dark"
@@ -57,6 +58,7 @@ function splitText(text, color) {
          variants={{
             hover: {
                y: !isPortrait ? [0, -80] : [0, -40],
+               opacity: 1,
                transition: {
                   delay: index * 0.03,
                   duration: 0.3,

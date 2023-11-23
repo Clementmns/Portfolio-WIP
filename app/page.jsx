@@ -6,10 +6,12 @@ import Page from "@/components/page";
 
 export default function Home() {
    return (
-      <Page>
-         <LandingHeroBanner />
-         <LandingDescription />
-         <LandingProjects />
-      </Page>
+      <>
+         <Page>
+            <LandingHeroBanner />
+            <LandingDescription />
+            <LandingProjects />
+         </Page>
+      </>
    );
 }

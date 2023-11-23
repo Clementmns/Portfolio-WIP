@@ -1,45 +1,42 @@
+"use client";
 import React from "react";
 import { RiArrowLeftDownLine } from "react-icons/ri";
 import HoverEffect from "../buttonHover";
-import { useRef, useEffect } from "react";
+import { useEffect } from "react";
 import { gsap } from "gsap/dist/gsap";
 import { motion } from "framer-motion";
 
 function Footer() {
-   const descRef = useRef();
-
    useEffect(() => {
-      const descElements = descRef.current.querySelectorAll(".word-wrapper");
-      const footerTitle = descRef.current.querySelectorAll(".footerTitle");
+      let ctx = gsap.context(() => {
+         const tlFooter = gsap.timeline({
+            scrollTrigger: {
+               trigger: ".footerTitle",
+               start: "top 80%", // Vous pouvez ajuster cette valeur pour définir à quel point l'élément doit être visible pour déclencher l'animation
+            },
+         });
 
-      const tl = gsap.timeline({
-         scrollTrigger: {
-            trigger: descRef.current,
-            start: "top 80%", // Vous pouvez ajuster cette valeur pour définir à quel point l'élément doit être visible pour déclencher l'animation
-         },
+         tlFooter.from(".wordwrapper-footer", {
+            opacity: 0,
+            y: 30,
+            duration: 0.2,
+            stagger: 0.02,
+            ease: "elastic",
+         });
+         tlFooter.from(".footerTitle", {
+            opacity: 0,
+            y: 50,
+            duration: 0.5,
+            ease: "power",
+            stagger: 0.05,
+         });
       });
 
-      tl.from(descElements, {
-         opacity: 0,
-         y: 30,
-         duration: 0.2,
-         stagger: 0.02,
-         ease: "elastic",
-      });
-      tl.from(footerTitle, {
-         opacity: 0,
-         y: 50,
-         duration: 0.5,
-         ease: "power",
-         stagger: 0.05,
-      });
+      return () => ctx.revert();
    }, []);
 
    return (
-      <div
-         ref={descRef}
-         className="bg-primary-light dark:bg-primary-dark flex justify-between flex-col items-center gap-24"
-      >
+      <div className="bg-primary-light dark:bg-primary-dark flex justify-between flex-col items-center gap-24">
          <div className="flex justify-between w-11/12 mt-10">
             <h5 className=" footerTitle text-background-light dark:text-background-dark lg:text-7xl md:text-6xl sm:text-5xl text-2xl">
                Better together.
