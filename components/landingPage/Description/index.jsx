@@ -34,7 +34,7 @@ function LandingDescription() {
    }, []);
 
    return (
-      <div className="h-[50vh] flex justify-center items-center w-full">
+      <div className="h-[70vh] flex justify-center items-center w-full mt-[20vh]">
          <div className="flex justify-center items-center flex-col h-full w-8/12 text-center">
             <div
                className="dark:text-background-light text-background-dark lg:text-6xl md:text-5xl sm:text-3xl text-2xl"

@@ -131,7 +131,7 @@ function LandingProjects() {
    ];
 
    return (
-      <div className="mt-52 mb-52">
+      <div className="mt-[60vh] mb-52">
          <div className="flex gap-10 items-end justify-center">
             <div className="w-11/12 justify-start">
                <h4 className="text-background-dark dark:text-background-light lg:text-9xl md:text-7xl sm:text-5xl text-3xl">

@@ -45,6 +45,10 @@ export const useLoadThemeAndLanguage = () => {
 
    return { isLoading, isLoadingPage };
 };
+console.log(
+   "%c Dev by Clément Omnès — https://clementomnes.dev/",
+   "background: #2D232E; color: #FF521C;"
+);
 
 const App = ({ Component, pageProps }) => {
    const { isLoading, isLoadingPage } = useLoadThemeAndLanguage();
