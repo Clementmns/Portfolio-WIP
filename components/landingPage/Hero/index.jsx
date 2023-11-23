@@ -51,7 +51,7 @@ function LandingHeroBanner() {
             data-speed="1"
          >
             <img
-               src="/me.jpg"
+               src="/me.webp"
                alt=""
                className="w-full h-full object-cover rounded-lg"
             />
