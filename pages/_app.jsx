@@ -20,7 +20,7 @@ export const useLoadThemeAndLanguage = () => {
       setTimeout(() => {
          setIsLoading(false);
          simulateContentLoading();
-      }, 2000);
+      }, 1000);
    }, []);
 
    useEffect(() => {
