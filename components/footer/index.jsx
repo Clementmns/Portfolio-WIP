@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef } from "react";
 import { RiArrowLeftDownLine } from "react-icons/ri";
 import HoverEffect from "../buttonHover";
 import { useEffect } from "react";
@@ -7,6 +7,7 @@ import { gsap } from "gsap/dist/gsap";
 import { motion } from "framer-motion";
 
 function Footer() {
+   const ctaFooter = useRef();
    useEffect(() => {
       let ctx = gsap.context(() => {
          const tlFooter = gsap.timeline({
@@ -16,12 +17,13 @@ function Footer() {
             },
          });
 
-         tlFooter.from(".wordwrapper-footer", {
+         tlFooter.from(ctaFooter.current, {
             opacity: 0,
             y: 30,
-            duration: 0.2,
+            duration: 0.5,
             stagger: 0.02,
-            ease: "elastic",
+            ease: "power",
+            delay: 0.2,
          });
          tlFooter.from(".footerTitle", {
             opacity: 0,
@@ -43,7 +45,10 @@ function Footer() {
             </h5>
             <RiArrowLeftDownLine className="text-background-light dark:text-background-dark lg:text-7xl md:text-6xl sm:text-5xl text-2xl" />
          </div>
-         <div className="flex flex-col justify-center items-center gap-14">
+         <div
+            className="flex flex-col justify-center items-center gap-14"
+            ref={ctaFooter}
+         >
             <HoverEffect
                text="clement.mns.pro@gmail.com"
                color={"inverse"}

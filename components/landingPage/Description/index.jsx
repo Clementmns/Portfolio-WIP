@@ -24,7 +24,6 @@ function LandingDescription() {
                start: "top 80%",
                end: "bottom 60%",
                toggleActions: "play play reverse reverse",
-               markers: true,
                scrub: true,
             },
             stagger: 0.5,
@@ -35,7 +34,7 @@ function LandingDescription() {
    }, []);
 
    return (
-      <div className="h-[70vh] flex justify-center items-center w-full mt-[20vh]">
+      <div className="h-[70vh] flex justify-center items-center w-full mt-[20vh] portrait:mt-[30vw]">
          <div className="flex justify-center items-center flex-col h-full w-8/12 text-center">
             <div className="startMaskWord dark:text-background-light text-background-dark lg:text-6xl md:text-5xl sm:text-3xl text-2xl ">
                {desc.split(" ").map((word, index) => (

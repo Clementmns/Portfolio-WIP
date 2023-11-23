@@ -31,7 +31,7 @@ function ToggleScheme() {
 
    return (
       <div
-         className="absolute bottom-10 left-10 w-20 h-12 bg-background-light dark:bg-background-dark flex justify-start data-[isOn='true']:justify-end rounded-full p-1 cursor-pointer"
+         className="absolute bottom-10 portrait:bottom-20 left-10 w-20 h-12 bg-background-light dark:bg-background-dark flex justify-start data-[isOn='true']:justify-end rounded-full p-1 cursor-pointer"
          data-ison={isOn}
          onClick={handleThemeSwitch}
       >

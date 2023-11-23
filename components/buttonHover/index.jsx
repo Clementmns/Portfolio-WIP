@@ -50,7 +50,7 @@ function splitText(text, color) {
    return text.split("").map((char, index) => (
       <motion.span
          key={index}
-         className={`wordwrapper-footer inline-block text-7xl portrait:text-3xl h-full leading-2 font-hero ${
+         className={`inline-block text-7xl portrait:text-3xl h-full leading-2 font-hero ${
             color == "inverse"
                ? "dark:text-background-dark text-background-light "
                : "dark:text-background-light text-background-dark"

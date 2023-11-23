@@ -22,7 +22,7 @@ function LangSelection() {
    }, []);
 
    return (
-      <div className="absolute bottom-10 right-10 flex justify-between w-20">
+      <div className="absolute bottom-10 right-10 flex justify-between w-20 portrait:bottom-20">
          <p
             className="cursor-pointer hover:scale-110 transition-all text-background-light"
             onClick={handleLangFr}
