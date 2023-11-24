@@ -1,5 +1,6 @@
 import "./global.scss";
 import ServerNav from "./server-nav";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
    title: "C.O Portfolio",
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
          </head>
          <body className="w-full">
             <ServerNav>{children}</ServerNav>
+            <Analytics />
          </body>
       </html>
    );
