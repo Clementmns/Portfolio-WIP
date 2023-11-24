@@ -281,7 +281,7 @@ export default function ProjectDetail() {
                      </div>
                   </div>
                   <div>
-                     <div className="flex portrait:flex-col justify-center portrait:gap-20 gap-20 w-full mb-8 text-background-dark dark:text-background-light h-[50vh] items-center">
+                     <div className=" flex flex-col sm:flex-col lg:flex-row justify-center portrait:gap-20 gap-20 w-full mb-8 text-background-dark dark:text-background-light h-[50vh] items-center">
                         {id > 0 && (
                            <Link
                               href={`/projects/${id - 1}`}
@@ -297,7 +297,7 @@ export default function ProjectDetail() {
                                           ? "Projet précédent"
                                           : "Previous project"
                                     }
-                                    width={"50vw"}
+                                    width={"40vw"}
                                  />
                               </div>
                            </Link>
@@ -314,7 +314,7 @@ export default function ProjectDetail() {
                                           ? "Projet suivant"
                                           : "Next project"
                                     }
-                                    width={"50vw"}
+                                    width={"40vw"}
                                  />
                               </div>
                               <div>
