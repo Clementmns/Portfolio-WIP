@@ -1,7 +1,7 @@
 "use client";
 import styles from "./style.module.scss";
 
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import Nav from "./nav";
 import { AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
@@ -11,7 +11,7 @@ export default function Header() {
    const [isActive, setIsActive] = useState(false);
    const pathname = usePathname();
 
-   useEffect(() => {
+   useLayoutEffect(() => {
       if (isActive) setIsActive(false);
    }, [pathname]);
 
@@ -21,8 +21,8 @@ export default function Header() {
    };
 
    return (
-      <div>
-         <div>
+      <nav>
+         <div className="flex justify-end">
             <div className={styles.header}>
                <div className="flex justify-center gap-5 portrait:justify-between portrait:flex-row-reverse portrait:w-full">
                   <motion.div
@@ -62,7 +62,9 @@ export default function Header() {
                </div>
             </div>
          </div>
-         <AnimatePresence mode="wait">{isActive && <Nav />}</AnimatePresence>
-      </div>
+         <AnimatePresence waitBeforeExit key={"4"}>
+            {isActive && <Nav />}
+         </AnimatePresence>
+      </nav>
    );
 }

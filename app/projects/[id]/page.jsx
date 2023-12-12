@@ -4,7 +4,6 @@ import Page from "@/components/page";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import gsap from "gsap/dist/gsap";
 import useLangChangeObserver from "@/assets/scripts/langChangeObserver";
-// import { SmoothScrollProvider } from "@/components/scroll";
 import Link from "next/link";
 import HoverEffect from "@/components/buttonHover";
 import { RiArrowRightSLine } from "react-icons/ri";
@@ -61,21 +60,21 @@ export default function ProjectDetail() {
       {
          id: 0,
          fr: {
-            title: "AppTrackr",
-            role: ["Développeur créatif", "Analiste", "Concepteur"],
+            title: "Grèce 2023",
+            role: ["Photographe", "Éditeur"],
             desc: "FR",
          },
          en: {
-            title: "AppTrackr",
-            role: ["Creative Dev", "Analyst", "Conceptor"],
+            title: "Greece 2023",
+            role: ["Photographer", "Editor"],
             desc: "EN",
          },
          year: "2023",
-         stacks: ["PHP", "MYSQL"],
-         imgHero: "/projectsThumbnails/05.jpg",
-         img1: "/projectsThumbnails/05.jpg",
-         img2: "/projectsThumbnails/download.jpeg",
-         img3: "/projectsThumbnails/images.png",
+         stacks: ["Lightroom", "Canon R10"],
+         imgHero: "/projectsImages/0/hero.jpg",
+         img1: "/projectsImages/0/1.jpg",
+         img2: "/projectsImages/0/2.jpg",
+         img3: "/projectsImages/0/3.jpg",
       },
       {
          id: 1,
@@ -91,10 +90,10 @@ export default function ProjectDetail() {
          },
          year: "2023",
          stacks: ["PHP", "MYSQL"],
-         imgHero: "/projectsThumbnails/05.jpg",
-         img1: "/projectsThumbnails/05.jpg",
-         img2: "/projectsThumbnails/download.jpeg",
-         img3: "/projectsThumbnails/images.png",
+         imgHero: "/projectsImages/1/hero.png",
+         img1: "/projectsImages/1/hero.png",
+         img2: "/projectsImages/1/hero.png",
+         img3: "/projectsImages/1/hero.png",
       },
       {
          id: 2,

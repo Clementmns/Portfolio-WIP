@@ -1,0 +1,36 @@
+{
+   "hero": {
+      "cv": {
+         "text": {
+            "fr": "Télécharger mon CV",
+            "en": "Download resume"
+         },
+         "download": {
+            "fr": "/cvFR.pdf",
+            "en": "/cvEN.pdf"
+         }
+      },
+      "desc": {
+         "1": {
+            "fr": "Je suis Clément Omnès, étudiant en Multimédia et Internet. Mes domaines d’intérêt incluent le design graphique, l’UI/UX, la production audiovisuelle, le marketing et le développement web.",
+            "en": "I am Clément Omnès, a student in Multimedia and Internet. My areas of interest include graphic design, UI/UX, audiovisual production, marketing, and web development."
+         },
+         "2": {
+            "fr": "Ma passion dans le développement web créatif où j’allie sens artistique et compétences techniques pour créer des expériences en ligne uniques.",
+            "en": "My passion lies in creative web development where I combine artistic sense and technical skills to create unique online experiences."
+         },
+         "3": {
+            "fr": "Je me distingue par mon ambition, mon engagement total dans chaque projet, mes compétences organisationnelles et ma capacité à collaborer efficacement. Ma curiosité me pousse à apprendre continuellement.",
+            "en": "I stand out through my ambition, complete dedication to each project, organizational skills, and ability to collaborate effectively. My curiosity drives me to continuously learn."
+         },
+         "4": {
+            "fr": "Mon objectif est d’exceller dans chaque projet pour satisfaire pleinement les clients, guidé par ma passion pour l’art visuel, la photographie, la musique, le Kungfu et la Kora. Chaque instant capturé est une opportunité de façonner l’avenir.",
+            "en": "My goal is to excel in each project to fully satisfy clients, guided by my passion for visual art, photography, music, Kungfu, and the Kora. Every captured moment is an opportunity to shape the future."
+         },
+         "5": {
+            "fr": "Merci de visiter mon portfolio. J’attends avec impatience de collaborer avec vous pour donner vie à vos idées.",
+            "en": "Thank you for visiting my portfolio. I look forward to collaborating with you to bring your ideas to life."
+         }
+      }
+   }
+}

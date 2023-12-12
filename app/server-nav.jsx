@@ -52,17 +52,27 @@ console.log(
 
 function ServerNav({ children }) {
    const { isLoading, isLoadingPage } = useLoadThemeAndLanguage();
+
+   const renderChildren = () => {
+      return React.Children.map(children, (child, index) => {
+         // Utilisation d'un index unique comme clé (à condition que les enfants n'aient pas déjà des clés propres)
+         return React.cloneElement(child, { key: `child-${index}` });
+      });
+   };
+
    return (
       <>
-         <AnimatePresence mode="wait" className="bg-background-light dark:">
+         <AnimatePresence wait className="bg-background-light dark:">
             <motion.div className="bg-background-light dark:bg-background-dark">
-               <AnimatePresence wait>
+               <AnimatePresence wait key={"unique-key-for-parent"}>
                   {isLoading && <Loader key="loader" />}
                </AnimatePresence>
                {!isLoadingPage && (
-                  <AnimatePresence waitBeforeExit>
-                     {children}
-                     // TODO: Changer transition entre les pages avec CURVE
+                  <AnimatePresence
+                     waitBeforeExit
+                     key={"unique-key-for-another-parent"}
+                  >
+                     {renderChildren()}
                   </AnimatePresence>
                )}
             </motion.div>

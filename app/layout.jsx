@@ -1,6 +1,7 @@
 import "./global.scss";
 import ServerNav from "./server-nav";
 import { Analytics } from "@vercel/analytics/react";
+import Header from "@/components/header";
 
 export const metadata = {
    title: "C.O Portfolio",
@@ -14,7 +15,10 @@ export default function RootLayout({ children }) {
             <link rel="shortcut icon" href="/fav.ico" type="image/x-icon" />
          </head>
          <body className="w-full">
-            <ServerNav>{children}</ServerNav>
+            <ServerNav>
+               <Header />
+               {children}
+            </ServerNav>
             <Analytics />
          </body>
       </html>
