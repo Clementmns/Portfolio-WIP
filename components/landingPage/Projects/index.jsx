@@ -6,9 +6,8 @@ import gsap from "gsap";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-gsap.registerPlugin(ScrollTrigger);
-
 function LandingProjects() {
+   gsap.registerPlugin(ScrollTrigger);
    const projectRef = useRef();
    const [modal, setModal] = useState({ active: false, index: 0 });
    const { active, index } = modal;

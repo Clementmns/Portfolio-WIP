@@ -10,6 +10,8 @@ import gsap from "gsap/dist/gsap";
 gsap.registerPlugin(ScrollTrigger);
 
 function LandingDescription() {
+   gsap.registerPlugin(ScrollTrigger);
+
    const language = useLangChangeObserver();
    const desc = getLandingContent("heroBanner.desc.p");
    const descCTA = getLandingContent("heroBanner.desc.cta");

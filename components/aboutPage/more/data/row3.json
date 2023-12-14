@@ -1,12 +1,26 @@
 {
-   "title": "03. Soft Skills",
-   "values": {
-      "communication": [
-         "Stress management",
-         "Force of proposal",
-         "Team working"
-      ],
-      "general": ["Curious", "Adaptability", "Creativity", "Autonomy"],
-      "corporate": ["SCRUM", "Time management"]
+   "fr": {
+      "title": "Soft Skills",
+      "values": {
+         "communication": [
+            "Gestion du stress",
+            "Force de proposition",
+            "Travail d'équipe"
+         ],
+         "general": ["Curieux", "Créatif", "Autonome"],
+         "corporate": ["SCRUM", "Gestion du temps"]
+      }
+   },
+   "en": {
+      "title": "03. Soft Skills",
+      "values": {
+         "communication": [
+            "Stress management",
+            "Force of proposal",
+            "Team working"
+         ],
+         "general": ["Curious", "Adaptability", "Creativity", "Autonomy"],
+         "corporate": ["SCRUM", "Time management"]
+      }
    }
 }

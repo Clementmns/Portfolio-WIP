@@ -7,9 +7,8 @@ import { gsap } from "gsap/dist/gsap";
 import { motion } from "framer-motion";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
 export default function Footer() {
+   gsap.registerPlugin(ScrollTrigger);
    const ctaFooter = useRef();
    useEffect(() => {
       let ctx = gsap.context(() => {

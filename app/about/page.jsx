@@ -15,6 +15,24 @@ function AboutPage() {
    const desc4 = getAboutContent("hero.desc.4");
    const desc5 = getAboutContent("hero.desc.5");
 
+   const detectImportantWords = (description) => {
+      const importantWordsRegex = /\*\$([^,\s]+)/g;
+      return description.split(importantWordsRegex).map((part, index) => {
+         if (index % 2 === 1) {
+            // Les mots importants correspondent aux index impairs
+            return (
+               <span
+                  key={index}
+                  className="font-hero text-primary-light dark:text-primary-dark"
+               >
+                  {part}
+               </span>
+            );
+         }
+         return part;
+      });
+   };
+
    return (
       <>
          <Page>
@@ -35,9 +53,9 @@ function AboutPage() {
                            </h1>
                         </div>
                      </div>
-                     <div className="w-[50vw] h-[50vw] portrait:w-[90vw] portrait:h-[90vw] md:portrait:w-[70vw] md:portrait:h-[70vw] flex justify-end">
+                     <div className="w-[40vw] h-[55vw] portrait:w-[90vw] portrait:h-[100vw] md:portrait:w-[70vw] md:portrait:h-[70vw] flex justify-end">
                         <img
-                           src="/me.webp"
+                           src="/about.jpg"
                            alt=""
                            className="w-full h-full object-cover rounded-lg"
                         />
@@ -51,19 +69,19 @@ function AboutPage() {
                      </div>
                   </div>
                   <div className="w-8/12 lg:text-3xl md:text-2xl text-xl mb-36 mt-[15rem] portrait:mt-10">
-                     <p>{desc1}</p>
+                     <p>{detectImportantWords(desc1)}</p>
                      <br></br>
                      <br></br>
-                     <p>{desc2}</p>
+                     <p>{detectImportantWords(desc2)}</p>
                      <br></br>
                      <br></br>
-                     <p>{desc3}</p>
+                     <p>{detectImportantWords(desc3)}</p>
                      <br></br>
                      <br></br>
-                     <p>{desc4}</p>
+                     <p>{detectImportantWords(desc4)}</p>
                      <br></br>
                      <br></br>
-                     <p>{desc5}</p>
+                     <p>{detectImportantWords(desc5)}</p>
                   </div>
                </div>
                <div className="flex gap-10 items-end justify-center w-full mb-20 mt-40">

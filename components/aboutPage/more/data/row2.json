@@ -1,8 +1,18 @@
 {
-   "title": "02. Design & Audiovisual",
-   "values": {
-      "illustration": ["Adobe Illustrator", "Adobe Photoshop"],
-      "audiovisual": ["Adobe Premiere Pro", "Adobe After Effects"],
-      "ui/ux design": ["Adobe XD", "Figma"]
+   "fr": {
+      "title": "Audiovisuel et Design",
+      "values": {
+         "illustration": ["Adobe Illustrator", "Adobe Photoshop"],
+         "audiovisuel": ["Adobe Premiere Pro", "Adobe After Effects"],
+         "ui/ux design": ["Adobe XD", "Figma"]
+      }
+   },
+   "en": {
+      "title": "Design & Audiovisual",
+      "values": {
+         "illustration": ["Adobe Illustrator", "Adobe Photoshop"],
+         "audiovisual": ["Adobe Premiere Pro", "Adobe After Effects"],
+         "ui/ux design": ["Adobe XD", "Figma"]
+      }
    }
 }

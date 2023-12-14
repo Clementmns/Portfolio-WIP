@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import row1 from "./data/row1.json";
 import row2 from "./data/row2.json";
 import row3 from "./data/row3.json";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import useLangChangeObserver from "@/assets/scripts/langChangeObserver";
 
 function MoreAbout(props) {
+   const language = useLangChangeObserver();
    let value = props.value;
    if (value === "webdev") {
       value = JSON.parse(JSON.stringify(row1));
@@ -19,7 +22,7 @@ function MoreAbout(props) {
 
    const [showInfo, setShowInfo] = useState(false);
 
-   let rows = value.values;
+   let rows = value[language].values;
 
    const toggleInfo = () => {
       setShowInfo(!showInfo);
@@ -32,13 +35,13 @@ function MoreAbout(props) {
             onClick={toggleInfo}
          >
             <h3 className="lg:text-6xl md:text-5xl sm:text-4xl text-3xl">
-               {value.title}
+               {value[language].title}
             </h3>
             <RiArrowDropDownLine className="h-24 w-24" />
          </motion.div>
          <motion.div
-            className="flex justify-between w-full overflow-hidden transition-[max-height] portrait:flex-col portrait:items-center"
-            animate={{ height: showInfo ? "auto" : 0 }}
+            className="flex justify-between w-full overflow-hidden max-h-10 portrait:flex-col portrait:items-center"
+            animate={{ maxHeight: showInfo ? "20rem" : "2.5rem" }}
             transition={{ duration: 0.3 }}
          >
             {Object.keys(rows).map((key) => (
