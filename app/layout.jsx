@@ -2,6 +2,7 @@ import "./global.scss";
 import ServerNav from "./server-nav";
 import { Analytics } from "@vercel/analytics/react";
 import Header from "@/components/header";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
    title: "C.O Portfolio",
@@ -20,6 +21,7 @@ export default function RootLayout({ children }) {
                {children}
             </ServerNav>
             <Analytics />
+            <SpeedInsights />
          </body>
       </html>
    );
