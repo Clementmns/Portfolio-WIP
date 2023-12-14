@@ -6,6 +6,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
    title: "Clément Omnès - Portfolio",
+   description:
+      "Bienvenue sur mon portfolio, il vous permettra de voir mes différents projets et compétences. Bonne visite !",
 };
 
 export default function RootLayout({ children }) {
