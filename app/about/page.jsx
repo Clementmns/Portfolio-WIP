@@ -68,7 +68,7 @@ function AboutPage() {
                         </a>
                      </div>
                   </div>
-                  <div className="w-8/12 lg:text-3xl md:text-2xl text-xl mb-36 mt-[15rem] portrait:mt-10">
+                  <div className="w-8/12 portrait:w-10/12 lg:text-3xl md:text-2xl text-xl mb-36 mt-[15rem] portrait:mt-10">
                      <p>{detectImportantWords(desc1)}</p>
                      <br></br>
                      <br></br>
@@ -95,7 +95,7 @@ function AboutPage() {
                      </h4>
                   </div>
                </div>
-               <div className="w-8/12 flex justify-center mb-40">
+               <div className="w-8/12 portrait:w-10/12 flex justify-center mb-40">
                   <div className="w-full">
                      <MoreAbout value="webdev" />
                      <MoreAbout value="design" />

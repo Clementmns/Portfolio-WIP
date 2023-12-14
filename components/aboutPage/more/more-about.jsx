@@ -41,7 +41,7 @@ function MoreAbout(props) {
          </motion.div>
          <motion.div
             className="flex justify-between w-full overflow-hidden max-h-10 portrait:flex-col portrait:items-center"
-            animate={{ maxHeight: showInfo ? "20rem" : "2.5rem" }}
+            animate={{ maxHeight: showInfo ? "45rem" : "2.5rem" }}
             transition={{ duration: 0.3 }}
          >
             {Object.keys(rows).map((key) => (
