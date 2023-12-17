@@ -112,21 +112,21 @@ function LandingProjects() {
    const projects = [
       {
          id: 0,
-         title: "AppTrackr",
-         stacks: ["PHP", "MYSQL"],
-         img: "/projectsThumbnails/download.jpeg",
+         title: "Portfolio 2024",
+         stacks: ["Next.JS", "React.JS", "GSAP", "SCSS"],
+         img: "/projectsThumbnails/portfolio.png",
       },
       {
          id: 1,
-         title: "Portfolio 2024",
-         stacks: ["Next.JS", "React.JS", "GSAP", "SCSS"],
-         img: "/projectsThumbnails/images.png",
+         title: "Dashboard",
+         stacks: ["PHP", "MYSQL", "TailwindCSS", "Chart.JS"],
+         img: "/projectsThumbnails/dashboard.png",
       },
       {
          id: 2,
          title: "AppTrackr",
          stacks: ["PHP", "MYSQL"],
-         img: "/projectsThumbnails/05.jpg",
+         img: "/projectsThumbnails/apptrackr.png",
       },
    ];
 
