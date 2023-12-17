@@ -239,8 +239,16 @@ export default function ProjectDetail() {
                                     )}
                                  </ul>
                               </div>
+                           </div>
+                           <div className="flex flex-col gap-20 w-2/3 portrait:w-full">
                               <div>
                                  <h3 className="lg:text-xl text-primary-light dark:text-primary-dark md:text-lg sm:text-sm text-xs">
+                                    Presentation
+                                 </h3>
+                                 <p>{selectedProject[lang]?.desc}</p>
+                              </div>
+                              <div>
+                                 <h3 className="lg:text-xl text-primary-light dark:text-primary-dark md:text-lg sm:text-sm text-xs grow-[3]">
                                     Site
                                  </h3>
                                  <ul>
@@ -251,14 +259,6 @@ export default function ProjectDetail() {
                                        {selectedProject.linkPreview}
                                     </a>
                                  </ul>
-                              </div>
-                           </div>
-                           <div className="flex flex-col gap-20 w-2/3 portrait:w-full">
-                              <div>
-                                 <h3 className="lg:text-xl text-primary-light dark:text-primary-dark md:text-lg sm:text-sm text-xs">
-                                    Presentation
-                                 </h3>
-                                 <p>{selectedProject[lang]?.desc}</p>
                               </div>
                            </div>
                         </div>
