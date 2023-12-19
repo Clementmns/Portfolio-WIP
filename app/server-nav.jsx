@@ -55,16 +55,19 @@ function ServerNav({ children }) {
 
    return (
       <>
-         <AnimatePresence wait className="bg-background-light dark:">
-            <motion.div className="bg-background-light dark:bg-background-dark">
-               <AnimatePresence wait key={"unique-key-for-parent"}>
+         <AnimatePresence
+            key={"unique-key2"}
+            className="bg-background-light dark:"
+         >
+            <motion.div
+               key={"unique-key"}
+               className="bg-background-light dark:bg-background-dark"
+            >
+               <AnimatePresence key={"unique-key-for-parent"}>
                   {isLoading && <Loader key="loader" />}
                </AnimatePresence>
                {!isLoadingPage && (
-                  <AnimatePresence
-                     waitBeforeExit
-                     key={"unique-key-for-another-parent"}
-                  >
+                  <AnimatePresence key={"unique-key-for"}>
                      {children}
                   </AnimatePresence>
                )}

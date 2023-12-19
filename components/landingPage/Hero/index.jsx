@@ -1,10 +1,14 @@
 "use client";
 import React, { useRef } from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import gsap from "gsap/dist/gsap";
 
 function LandingHeroBanner() {
+   const [isPortrait, setIsPortrait] = useState(
+      window.matchMedia("(orientation: portrait)").matches
+   );
+
    gsap.registerPlugin(ScrollTrigger);
 
    const parallaxRef = useRef();
@@ -30,14 +34,17 @@ function LandingHeroBanner() {
       });
 
       return () => ctx.revert();
-   }, []);
+   }, [isPortrait]);
 
    return (
       <div
          className="startParallax flex flex-col justify-between items-center h-auto"
          ref={parallaxRef}
       >
-         <div className="layer relative top-[15vh] z-[6]" data-speed="0.2">
+         <div
+            className="layer relative top-[15vh] z-[6]"
+            data-speed={isPortrait ? "0" : "0.2"}
+         >
             <h1 className="hidden">Clément Omnès - Développeur Front-End</h1>
             <h2 className="dark:text-background-light text-background-dark text-center lg:text-hero leading-none md:text-9xl sm:text-8xl text-6xl">
                <span className="font-hero text-primary-light dark:text-primary-dark leading-none ">
@@ -49,7 +56,7 @@ function LandingHeroBanner() {
          </div>
          <div
             className="layer w-[50vw] h-[100vh] mt-28 portrait:w-[95vw] portrait:h-[80vh]"
-            data-speed="1"
+            data-speed={isPortrait ? "0" : "1"}
          >
             <img
                src="/me.webp"
