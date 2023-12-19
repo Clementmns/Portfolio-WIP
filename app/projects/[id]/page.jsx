@@ -251,14 +251,14 @@ export default function ProjectDetail() {
                                  <h3 className="lg:text-xl text-primary-light dark:text-primary-dark md:text-lg sm:text-sm text-xs grow-[3]">
                                     Site
                                  </h3>
-                                 <ul>
+                                 <div>
                                     <a
                                        href={selectedProject.link}
                                        className="hover:underline"
                                     >
                                        {selectedProject.linkPreview}
                                     </a>
-                                 </ul>
+                                 </div>
                               </div>
                            </div>
                         </div>
