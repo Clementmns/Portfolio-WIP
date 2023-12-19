@@ -21,7 +21,6 @@ export default function RootLayout({ children }) {
             <ServerNav>
                <Header />
                {children}
-               <Footer />
             </ServerNav>
             <Analytics />
             <SpeedInsights />

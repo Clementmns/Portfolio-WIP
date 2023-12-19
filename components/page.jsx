@@ -3,6 +3,7 @@ export default function Page({ children }) {
       <>
          <main className="font-basic dark:bg-background-dark bg-background-light h-full">
             {children}
+            <Footer />
          </main>
       </>
    );

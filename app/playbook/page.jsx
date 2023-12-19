@@ -16,12 +16,12 @@ function Playbook() {
    );
 
    const initialImageLinks = [
-      "/me.webp",
-      "/me.webp",
-      "/me.webp",
-      "/me.webp",
-      "/me.webp",
-      "/me.webp",
+      "/playbookThumbnails/typo.mov",
+      "/playbookThumbnails/svg.mov",
+      "/playbookThumbnails/affiche.png",
+      "/playbookThumbnails/gambett.mov",
+      "/playbookThumbnails/site.mov",
+      "/playbookThumbnails/ciklab.mov",
       "/me.webp",
       "/me.webp",
    ];
@@ -73,17 +73,25 @@ function Playbook() {
                   <div className="w-10/12 sm:portrait:w-6/12 flex flex-col gap-[30rem] portrait:block portrait:gap-0">
                      <div className="row1 flex justify-between items-end portrait:block">
                         <div>
-                           <img
-                              className="mt-20 lg:h-[60vh] lg:w-[60vh] md:h-[50vh] md:w-[40vh] portrait:h-[40vh] portrait:w-full object-cover"
-                              src={initialImageLinks[0]}
-                              alt=""
-                           />
+                           <video
+                              autoPlay
+                              loop
+                              muted
+                              playsInline
+                              className="mt-20 lg:h-[60vh] lg:w-[60vh] md:h-[50vh] md:w-[40vh] portrait:h-[40vh] portrait:w-full"
+                           >
+                              <source src={initialImageLinks[0]} />
+                           </video>
                         </div>
                         <div
                            className="layer"
                            data-speed={`${isPortrait ? "0" : "0.8"}`}
                         >
-                           <img
+                           <video
+                              autoPlay
+                              muted
+                              loop
+                              playsInline
                               className="mt-20 lg:h-[40vh] lg:w-[40vh] md:h-[30vh] md:w-[30vh] portrait:h-[40vh] portrait:w-full object-cover"
                               src={initialImageLinks[1]}
                               alt=""
@@ -93,7 +101,7 @@ function Playbook() {
                      <div className="row2 flex justify-center items-end portrait:block">
                         <div>
                            <img
-                              className="mt-20 lg:h-[60vh] lg:w-[60vh] md:h-[50vh] md:w-[50vh] portrait:h-[40vh] portrait:w-full object-cover"
+                              className="mt-20 lg:h-[90vh] lg:w-[60vh] md:h-[50vh] md:w-[50vh] portrait:h-[40vh] portrait:w-full object-cover"
                               src={initialImageLinks[2]}
                               alt=""
                            />
@@ -104,7 +112,11 @@ function Playbook() {
                            data-speed={`${isPortrait ? "0" : "0.8"}`}
                            className="layer"
                         >
-                           <img
+                           <video
+                              autoPlay
+                              muted
+                              loop
+                              playsInline
                               className="mt-20 lg:h-[35vh] lg:w-[35vh] md:h-[25vh] md:w-[25vh] portrait:h-[40vh] portrait:w-full object-cover"
                               src={initialImageLinks[3]}
                               alt=""
@@ -114,14 +126,22 @@ function Playbook() {
                            data-speed={`${isPortrait ? "0" : "1.3"}`}
                            className="layer"
                         >
-                           <img
+                           <video
+                              autoPlay
+                              muted
+                              loop
+                              playsInline
                               className="mt-20 lg:h-[35vh] lg:w-[35vh] md:h-[25vh] md:w-[25vh] portrait:h-[40vh] portrait:w-full object-cover"
                               src={initialImageLinks[4]}
                               alt=""
                            />
                         </div>
                         <div>
-                           <img
+                           <video
+                              autoPlay
+                              muted
+                              loop
+                              playsInline
                               className="mt-20 lg:h-[35vh] lg:w-[35vh] md:h-[25vh] md:w-[25vh] portrait:h-[40vh] portrait:w-full object-cover"
                               src={initialImageLinks[5]}
                               alt=""
