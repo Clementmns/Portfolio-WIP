@@ -114,19 +114,19 @@ function LandingProjects() {
          id: 0,
          title: "Portfolio 2024",
          stacks: ["Next.JS", "React.JS", "GSAP", "SCSS"],
-         img: "/projectsThumbnails/portfolio.png",
+         img: "/projectsThumbnails/portfolio.webp",
       },
       {
          id: 1,
          title: "Dashboard",
          stacks: ["PHP", "MYSQL", "TailwindCSS", "Chart.JS"],
-         img: "/projectsThumbnails/dashboard.png",
+         img: "/projectsThumbnails/dashboard.webp",
       },
       {
          id: 2,
          title: "AppTrackr",
          stacks: ["PHP", "MYSQL"],
-         img: "/projectsThumbnails/apptrackr.png",
+         img: "/projectsThumbnails/apptrackr.webp",
       },
    ];
 

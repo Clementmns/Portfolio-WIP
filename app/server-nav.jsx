@@ -20,7 +20,7 @@ export const useLoadThemeAndLanguage = () => {
       setTimeout(() => {
          setIsLoading(false);
          simulateContentLoading();
-      }, 500);
+      }, 10);
    }, []);
 
    useEffect(() => {
@@ -53,13 +53,6 @@ console.log(
 function ServerNav({ children }) {
    const { isLoading, isLoadingPage } = useLoadThemeAndLanguage();
 
-   const renderChildren = () => {
-      return React.Children.map(children, (child, index) => {
-         // Utilisation d'un index unique comme clé (à condition que les enfants n'aient pas déjà des clés propres)
-         return React.cloneElement(child, { key: `child-${index}` });
-      });
-   };
-
    return (
       <>
          <AnimatePresence wait className="bg-background-light dark:">
@@ -72,7 +65,7 @@ function ServerNav({ children }) {
                      waitBeforeExit
                      key={"unique-key-for-another-parent"}
                   >
-                     {renderChildren()}
+                     {children}
                   </AnimatePresence>
                )}
             </motion.div>
