@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import Loader from "./loader";
 
@@ -16,11 +16,11 @@ export const useLoadThemeAndLanguage = () => {
          setIsLoadingPage(false);
       };
 
-      // Lancer le chargement simulé du contenu après le délai initial (également 2 secondes)
+      // Lancer le chargement simulé du contenu après le délai initial
       setTimeout(() => {
          setIsLoading(false);
          simulateContentLoading();
-      }, 10);
+      }, 0);
    }, []);
 
    useEffect(() => {
@@ -55,24 +55,12 @@ function ServerNav({ children }) {
 
    return (
       <>
-         <AnimatePresence
-            key={"unique-key2"}
-            className="bg-background-light dark:"
-         >
-            <motion.div
-               key={"unique-key"}
-               className="bg-background-light dark:bg-background-dark"
-            >
-               <AnimatePresence key={"unique-key-for-parent"}>
-                  {isLoading && <Loader key="loader" />}
-               </AnimatePresence>
-               {!isLoadingPage && (
-                  <AnimatePresence key={"unique-key-for"}>
-                     {children}
-                  </AnimatePresence>
-               )}
-            </motion.div>
+         <AnimatePresence key={"unique-key-for-parent"}>
+            {isLoading && <Loader key="loader" />}
          </AnimatePresence>
+         {!isLoadingPage && (
+            <AnimatePresence key={"unique-key-for"}>{children}</AnimatePresence>
+         )}
       </>
    );
 }
