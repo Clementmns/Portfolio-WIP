@@ -39,20 +39,27 @@ function LandingDescription() {
       <div className="h-[70vh] flex justify-center items-center w-full mt-[20vh] portrait:mt-[30vw]">
          <div className="flex justify-center items-center flex-col h-full w-8/12 text-center">
             <div className="startMaskWord dark:text-background-light text-background-dark lg:text-6xl md:text-5xl sm:text-3xl text-2xl ">
-               {desc.split(" ").map((word, index) => (
-                  <span
-                     key={index}
-                     className={
-                        word === "interfaces" ||
-                        word === "développeur" ||
-                        word === "creative"
-                           ? "word-wrapper-desc opacity-1 font-hero dark:text-primary-dark text-primary-light relative"
-                           : "word-wrapper-desc opacity-1"
-                     }
-                  >
-                     {word}{" "}
-                  </span>
-               ))}
+               <h2>
+                  {desc.split(" ").map((word, index) =>
+                     word === "interfaces" ||
+                     word === "développeur" ||
+                     word === "creative" ? (
+                        <strong
+                           key={index}
+                           className="word-wrapper-desc opacity-1 font-hero dark:text-primary-dark text-primary-light relative"
+                        >
+                           {word}{" "}
+                        </strong>
+                     ) : (
+                        <span
+                           key={index}
+                           className="word-wrapper-desc opacity-1"
+                        >
+                           {word}{" "}
+                        </span>
+                     )
+                  )}
+               </h2>
                <div className="flex justify-center">
                   <Link
                      href={"/about"}

@@ -210,15 +210,15 @@ export default function ProjectDetail() {
                         <div className="flex justify-around portrait:flex-col portrait:items-center gap-10">
                            <div className="flex flex-col gap-20 portrait:flex-row portrait:gap-5 portrait:text-center">
                               <div>
-                                 <h3 className="lg:text-xl text-primary-light dark:text-primary-dark md:text-lg sm:text-sm text-xs">
+                                 <h2 className="lg:text-xl text-primary-light dark:text-primary-dark md:text-lg sm:text-sm text-xs">
                                     Year
-                                 </h3>
+                                 </h2>
                                  <p>{selectedProject.year}</p>
                               </div>
                               <div>
-                                 <h3 className="lg:text-xl text-primary-light dark:text-primary-dark md:text-lg sm:text-sm text-xs">
+                                 <h2 className="lg:text-xl text-primary-light dark:text-primary-dark md:text-lg sm:text-sm text-xs">
                                     Role
-                                 </h3>
+                                 </h2>
                                  <ul>
                                     {selectedProject[lang]?.role.map(
                                        (role, index) => (
@@ -228,9 +228,9 @@ export default function ProjectDetail() {
                                  </ul>
                               </div>
                               <div>
-                                 <h3 className="lg:text-xl text-primary-light dark:text-primary-dark md:text-lg sm:text-sm text-xs">
+                                 <h2 className="lg:text-xl text-primary-light dark:text-primary-dark md:text-lg sm:text-sm text-xs">
                                     Technologies
-                                 </h3>
+                                 </h2>
                                  <ul>
                                     {selectedProject.stacks.map(
                                        (stack, index) => (
@@ -242,15 +242,15 @@ export default function ProjectDetail() {
                            </div>
                            <div className="flex flex-col gap-20 w-2/3 portrait:w-full">
                               <div>
-                                 <h3 className="lg:text-xl text-primary-light dark:text-primary-dark md:text-lg sm:text-sm text-xs">
+                                 <h2 className="lg:text-xl text-primary-light dark:text-primary-dark md:text-lg sm:text-sm text-xs">
                                     Presentation
-                                 </h3>
+                                 </h2>
                                  <p>{selectedProject[lang]?.desc}</p>
                               </div>
                               <div>
-                                 <h3 className="lg:text-xl text-primary-light dark:text-primary-dark md:text-lg sm:text-sm text-xs grow-[3]">
+                                 <h2 className="lg:text-xl text-primary-light dark:text-primary-dark md:text-lg sm:text-sm text-xs grow-[3]">
                                     Site
-                                 </h3>
+                                 </h2>
                                  <div>
                                     <a
                                        href={selectedProject.link}

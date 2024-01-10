@@ -45,14 +45,14 @@ function LandingHeroBanner() {
             className="layer relative top-[15vh] z-[6]"
             data-speed={isPortrait ? "0" : "0.2"}
          >
-            <h1 className="hidden">Clément Omnès - Développeur Front-End</h1>
-            <h2 className="dark:text-background-light text-background-dark text-center lg:text-hero leading-none md:text-9xl sm:text-8xl text-6xl">
+            <h1 className="hidden">Clément Omnès Développeur Front-End</h1>
+            <p className="dark:text-background-light text-background-dark text-center lg:text-hero leading-none md:text-9xl sm:text-8xl text-6xl">
                <span className="font-hero text-primary-light dark:text-primary-dark leading-none ">
                   work
                </span>
                <br />
                on details
-            </h2>
+            </p>
          </div>
          <div
             className="layer w-[50vw] h-[100vh] mt-28 portrait:w-[95vw] portrait:h-[80vh]"
