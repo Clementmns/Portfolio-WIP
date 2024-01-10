@@ -8,7 +8,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 export const metadata = {
    title: "Clément Omnès - Portfolio",
    description:
-      "Bienvenue sur mon portfolio, il vous permettra de voir mes différents projets et compétences. Bonne visite !",
+      "Découvrez le portfolio de Clément Omnès, étudiant passionné en développement web, marketing digital et graphisme. Explorez ses réalisations et compétences dans ces domaines !",
 };
 
 export default function RootLayout({ children }) {
