@@ -8,7 +8,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 export const metadata = {
    title: "Clément Omnès - Développeur Web",
    description:
-      "Découvrez le portfolio de Clément Omnès, étudiant passionné en développement web, marketing digital et graphisme. Explorez ses réalisations et compétences dans ces domaines !",
+      "Découvrez le portfolio de Clément Omnès, étudiant en développement web, marketing digital et en graphisme. Explorez ses réalisations et compétences dans ces domaines !",
 };
 
 export default function RootLayout({ children }) {
