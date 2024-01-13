@@ -110,8 +110,8 @@ export default function ProjectDetail() {
          img1: "/projectsImages/1/1.webp",
          img2: "/projectsImages/1/2.webp",
          img3: "/projectsImages/1/3.webp",
-         link: "https://google.com",
-         linkPreview: "dashboard.dev",
+         // link: "https://google.com",
+         // linkPreview: "dashboard.dev",
       },
       {
          id: 2,
@@ -131,8 +131,29 @@ export default function ProjectDetail() {
          img1: "/projectsImages/2/1.webp",
          img2: "/projectsImages/2/2.webp",
          img3: "/projectsImages/2/3.webp",
-         link: "https://google.com",
-         linkPreview: "apptrackr.dev",
+         // link: "https://google.com",
+         // linkPreview: "apptrackr.dev",
+      },
+      {
+         id: 3,
+         fr: {
+            title: "CIKLab",
+            role: ["Chef de projet", "Motion Design", "Relation client"],
+            desc: "CIKLab est une start-up visant à simplifier l'import des résultats d'analyses de contrôles qualités dans le secteur agroalimentaire. Notre mission était de réaliser un motion design permettant de comprendre au mieux et le plus rapidement la vitesse d'importation du logiciel. Ce motion design à été réalisé dans une durée de deux semaines, mélangeant visioconférence, compromis et réflexion, il nous as permis de nous améliorer autant sur le plan technique que communicationnel. Ayant été nommé chef de projet, j'ai donc dû réaliser un planning et guider une équipe de 4 personnes pour mener au mieux ce projet.",
+         },
+         en: {
+            title: "CIKLab",
+            role: ["Project Manager", "Motion Design", "Customer relationship"],
+            desc: "CIKLab is a startup aiming to simplify the import of quality control analysis results in the agri-food sector. Our mission was to create a motion design to better and quickly understand the software's import speed. This motion design was completed within a two-week timeframe, blending video conferencing, compromises, and reflection. It allowed us to improve both technically and in terms of communication. As the appointed project manager, I had to create a schedule and guide a team of 4 people to successfully carry out this project.",
+         },
+         year: "2023",
+         stacks: ["After Effects", "Première Pro", "Illustrator"],
+         imgHero: "/projectsImages/3/hero.webp",
+         img1: "/projectsImages/3/1.webp",
+         img2: "/projectsImages/3/2.webp",
+         img3: "/projectsImages/3/3.webp",
+         link: "https://resources.ciklab.com/fr/import-resultats-analyses",
+         linkPreview: "ciklab.com",
       },
    ];
 
@@ -249,7 +270,7 @@ export default function ProjectDetail() {
                               </div>
                               <div>
                                  <h2 className="lg:text-xl text-primary-light dark:text-primary-dark md:text-lg sm:text-sm text-xs grow-[3]">
-                                    Site
+                                    {selectedProject.link ? "Site" : ""}
                                  </h2>
                                  <div>
                                     <a

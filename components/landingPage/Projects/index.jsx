@@ -128,6 +128,12 @@ function LandingProjects() {
          stacks: ["PHP", "MYSQL"],
          img: "/projectsThumbnails/apptrackr.webp",
       },
+      {
+         id: 3,
+         title: "CIKLab",
+         stacks: ["After Effects", "Première Pro", "Illustrator"],
+         img: "/projectsThumbnails/ciklab.webp",
+      },
    ];
 
    return (
@@ -158,7 +164,7 @@ function LandingProjects() {
                         >
                            <img
                               src={project.img}
-                              alt=""
+                              alt="projet de cours"
                               className="w-full h-full object-cover rounded-lg cursor-pointer"
                            />
                         </Link>

@@ -22,8 +22,6 @@ function Playbook() {
       "/playbookThumbnails/gambett.mov",
       "/playbookThumbnails/site.mov",
       "/playbookThumbnails/ciklab.mov",
-      "/me.webp",
-      "/me.webp",
    ];
 
    const parallaxRefPlaybook = useRef();
@@ -142,27 +140,8 @@ function Playbook() {
                               muted
                               loop
                               playsInline
-                              className="mt-20 lg:h-[35vh] lg:w-[35vh] md:h-[25vh] md:w-[25vh] portrait:h-[40vh] portrait:w-full object-cover"
+                              className="mt-20 lg:h-[35vh] lg:w-[50vh] md:h-[25vh] md:w-[30vh] portrait:h-[40vh] portrait:w-full object-cover"
                               src={initialImageLinks[5]}
-                              alt=""
-                           />
-                        </div>
-                     </div>
-                     <div className="row4 flex justify-between items-end portrait:block">
-                        <div>
-                           <img
-                              className="mt-20 lg:h-[70vh] lg:w-[70vh] md:h-[50vh] md:w-[50vh] portrait:h-[40vh] portrait:w-full object-cover"
-                              src={initialImageLinks[6]}
-                              alt=""
-                           />
-                        </div>
-                        <div
-                           data-speed={`${isPortrait ? "0" : "1"}`}
-                           className="layer"
-                        >
-                           <img
-                              className="mt-20 lg:h-[45vh] lg:w-[45vh] md:h-[30vh] md:w-[30vh] portrait:h-[40vh] portrait:w-full object-cover"
-                              src={initialImageLinks[7]}
                               alt=""
                            />
                         </div>

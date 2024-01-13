@@ -2,16 +2,16 @@
    "fr": {
       "title": "Développement Web",
       "values": {
-         "languages": ["HTML", "JavaScript", "SCSS", "MySQL", "PHP"],
-         "librairies": ["Tailwind.CSS", "Jquery", "React"],
+         "languages": ["HTML", "JavaScript", "SCSS", "MySQL", "PHP", "GIT"],
+         "librairies": ["Tailwind.CSS", "Jquery", "React.JS"],
          "frameworks": ["GSAP", "Next.js"]
       }
    },
    "en": {
       "title": "Web Development",
       "values": {
-         "langages": ["HTML", "JavaScript", "SCSS", "MySQL", "PHP"],
-         "librairies": ["Tailwind.CSS", "Jquery", "React"],
+         "langages": ["HTML", "JavaScript", "SCSS", "MySQL", "PHP", "GIT"],
+         "librairies": ["Tailwind.CSS", "Jquery", "React.JS"],
          "frameworks": ["GSAP", "Next.js"]
       }
    }
