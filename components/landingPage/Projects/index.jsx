@@ -108,7 +108,6 @@ function LandingProjects() {
       });
    }, [isPortrait]);
 
-   // TODO: Remplir avec de vrais projets
    const projects = [
       {
          id: 0,
@@ -118,18 +117,24 @@ function LandingProjects() {
       },
       {
          id: 1,
+         title: "GreenShift",
+         stacks: ["PHP", "MYSQL", "CodeIgniter", "Tailwind.CSS", "JQuery"],
+         img: "/projectsThumbnails/greenshift.webp",
+      },
+      {
+         id: 2,
          title: "Dashboard",
          stacks: ["PHP", "MYSQL", "TailwindCSS", "Chart.JS"],
          img: "/projectsThumbnails/dashboard.webp",
       },
       {
-         id: 2,
+         id: 3,
          title: "AppTrackr",
          stacks: ["PHP", "MYSQL"],
          img: "/projectsThumbnails/apptrackr.webp",
       },
       {
-         id: 3,
+         id: 4,
          title: "CIKLab",
          stacks: ["After Effects", "Première Pro", "Illustrator"],
          img: "/projectsThumbnails/ciklab.webp",

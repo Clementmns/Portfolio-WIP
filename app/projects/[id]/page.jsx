@@ -95,6 +95,37 @@ export default function ProjectDetail() {
       {
          id: 1,
          fr: {
+            title: "GreenShift",
+            role: [
+               "Développeur Front",
+               "Développeur Back",
+               "Architecte Base de Données",
+               "Responsable de livraison"
+            ],
+            desc: "Notre équipe composée de Liam MAKÉ, Titouan LAHCHIOUACH et moi-même, Clément OMNÈS, a développé une application web axée sur l'écologie. Nous avons utilisé CodeIgniter pour la structure backend, MySQL pour la base de données et Tailwind.CSS pour l'interface utilisateur. L'application permet aux utilisateurs de créer un compte et de se fixer des objectifs écologiques hebdomadaires. Chaque objectif accompli génère des points, échangeables contre des badges symbolisant des actions positives pour l'environnement. Nous avons intégré des fonctionnalités sociales telles qu'un classement mondial et amical, ainsi que la possibilité de suivre d'autres utilisateurs et de découvrir leurs badges préférés. Nous avons mis l'accent sur une expérience utilisateur fluide et une esthétique simple mais attrayante. Les graphismes ont été choisis pour communiquer notre message écologique de manière claire. En résumé, notre projet vise à encourager des actions écologiques grâce à une plateforme interactive et conviviale.",
+         },
+         en: {
+            title: "Greenshift",
+            role: [
+               "Front-End Developer",
+               "Back-End Developer",
+               "Database Conceptor",
+               "Delivery Manager"
+            ],
+            desc: "Our team, consisting of Liam MAKÉ, Titouan LAHCHIOUACH, and myself, Clément OMNÈS, developed a web application with a focus on ecology. We utilized CodeIgniter for the backend structure, MySQL for the database, and Tailwind.CSS for the user interface. The application allows users to create an account and set weekly ecological goals. Each completed goal earns points, which can be exchanged for badges representing positive environmental actions. We integrated social features such as global and friendly rankings, along with the ability to follow other users and discover their favorite badges. We emphasized a smooth user experience and a simple yet appealing aesthetic. Graphics were selected to communicate our ecological message clearly. In summary, our project aims to encourage ecological actions through an interactive and user-friendly platform.",
+         },
+         year: "2024",
+         stacks: ["PHP", "MYSQL", "CodeIgniter", "Tailwind.CSS", "JQuery"],
+         imgHero: "/projectsImages/4/hero.webp",
+         img1: "/projectsImages/4/1.webp",
+         img2: "/projectsImages/4/2.webp",
+         img3: "/projectsImages/4/3.webp",
+         // link: "https://clementomnes.dev",
+         // linkPreview: "clementomnes.dev",
+      },
+      {
+         id: 2,
+         fr: {
             title: "Dashboard",
             role: ["Développeur", "Analiste", "Concepteur"],
             desc: "Le Dashboard représente une interface intuitive permettant de visualiser et d'analyser des données de manière dynamique. Mon objectif principal était de créer un outil accessible et fonctionnel, offrant une expérience utilisateur fluide tout en intégrant des fonctionnalités clés pour une analyse approfondie des données. Parmi les compétences que j'ai mises en œuvre pour ce projet, j'ai notamment utilisé une méthode de transmission des données entre PHP et JavaScript, en exploitant la technique d'AJAX. Cette approche m'a permis de synchroniser efficacement les données côté serveur avec les interactions en temps réel de l'utilisateur, offrant ainsi une expérience interactive et réactive. La conception du Dashboard a impliqué la création de graphiques dynamiques croisant des données pertinentes pour faciliter la compréhension et l'interprétation des informations. J'ai également veillé à ce que l'esthétique visuelle soit soignée, en travaillant sur l'aspect graphique pour garantir à la fois la clarté des informations et l'attrait visuel de l'interface.",
@@ -114,7 +145,7 @@ export default function ProjectDetail() {
          // linkPreview: "dashboard.dev",
       },
       {
-         id: 2,
+         id: 3,
          fr: {
             title: "AppTrackr",
             role: ["Développeur", "Architecte Base de Données"],
@@ -135,7 +166,7 @@ export default function ProjectDetail() {
          // linkPreview: "apptrackr.dev",
       },
       {
-         id: 3,
+         id: 4,
          fr: {
             title: "CIKLab",
             role: ["Chef de projet", "Motion Design", "Relation client"],
