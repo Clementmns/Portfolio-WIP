@@ -8,7 +8,8 @@
             "Travail d'équipe"
          ],
          "general": ["Curieux", "Créatif", "Autonome"],
-         "corporate": ["SCRUM", "Gestion du temps"]
+         "corporate": ["SCRUM", "Gestion du temps"],
+         "software": ["Jira", "BitBucket"]
       }
    },
    "en": {
@@ -20,7 +21,8 @@
             "Team working"
          ],
          "general": ["Curious", "Adaptability", "Creativity", "Autonomy"],
-         "corporate": ["SCRUM", "Time management"]
+         "corporate": ["SCRUM", "Time management"],
+         "software": ["Jira", "BitBucket"]
       }
    }
 }
