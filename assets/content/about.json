@@ -6,31 +6,33 @@
             "en": "Download resume"
          },
          "download": {
-            "fr": "/cvFR.pdf",
-            "en": "/cvEN.pdf"
+            "fr": "/cv/clement_omnes_cv_fr.pdf",
+            "en": "/cv/clement_omnes_cv_en.pdf"
          }
       },
+
       "desc": {
          "1": {
-            "fr": "Je suis *$Clément *$Omnès, étudiant en Multimédia et Internet. Mes domaines d’intérêt incluent le *$design *$graphique, l’UI/UX, la production audiovisuelle, le marketing et le *$développement *$web.",
-            "en": "I am *$Clément *$Omnès, a student in Multimedia and Internet. My areas of interest include *$graphic *$design, UI/UX, audiovisual production, marketing, and *$web *$development."
+            "fr": "Je suis *$Clément *$Omnès, un passionné de technologie et de *$résolution de *$problèmes. Mon parcours en Multimédia et Internet m'a permis de développer une approche analytique et créative pour concevoir des solutions performantes et esthétiques.",
+            "en": "I am *$Clément *$Omnès, a technology enthusiast with a passion for *$problem *$solving. My background in Multimedia and Internet has allowed me to develop an analytical and creative approach to designing high-performance and aesthetically pleasing solutions."
          },
          "2": {
-            "fr": "Ma passion dans le développement web *$créatif où j’allie sens artistique et compétences techniques pour créer des *$expériences en ligne *$uniques.",
-            "en": "My passion lies in *$creative web development where I combine artistic sense and technical skills to create *$unique online *$experiences."
+            "fr": "J'apprécie particulièrement la conception d'interfaces intuitives et la gestion des *$données, en trouvant l'équilibre parfait entre *$fonctionnalité et *$design pour offrir des expériences utilisateur optimales.",
+            "en": "I particularly enjoy designing intuitive *$interfaces and managing *$data, finding the perfect balance between *$functionality and *$design to provide optimal user experiences."
          },
          "3": {
-            "fr": "Je me distingue par mon ambition, mon *$engagement *$total dans chaque projet, mes compétences organisationnelles et ma capacité à *$collaborer efficacement. Ma curiosité me pousse à *$apprendre *$continuellement.",
-            "en": "I stand out through my ambition, *$complete *$dedication to each project, organizational skills, and ability to *$collaborate effectively. My curiosity drives me to *$continuously *$learn."
+            "fr": "Mon travail se distingue par une *$approche logique et méthodique, alliée à un souci constant de l'ergonomie et de l'esthétique. J'aime relever des défis techniques tout en veillant à l'harmonie visuelle des projets.",
+            "en": "My work is distinguished by a *$logical and *$methodical approach, combined with a constant concern for *$ergonomics and *$aesthetics. I enjoy tackling technical challenges while ensuring the visual harmony of projects."
          },
          "4": {
-            "fr": "Mon objectif est d’exceller dans chaque projet pour satisfaire pleinement les clients, guidé par ma passion pour l’art visuel, la photographie, la musique et le Kungfu. Chaque instant capturé est une opportunité de façonner l’avenir.",
-            "en": "My goal is to excel in each project to fully satisfy clients, guided by my passion for visual art, photography, Kungfu, and the music. Every captured moment is an opportunity to shape the future."
+            "fr": "Je crois en l'importance de la *$collaboration et du partage de connaissances pour mener à bien chaque projet. Mon engagement et ma polyvalence me permettent de travailler efficacement sur des aspects variés du développement.",
+            "en": "I believe in the importance of *$collaboration and knowledge sharing to successfully complete each project. My commitment and versatility enable me to work efficiently on various aspects of development."
          },
          "5": {
-            "fr": "Merci de visiter mon *$portfolio. J’attends avec impatience de collaborer avec vous pour *$donner *$vie *$à *$vos *$idées.",
-            "en": "Thank you for visiting my *$portfolio. I look forward to collaborating with you to *$bring *$your *$ideas *$to *$life."
+            "fr": "Merci de visiter mon *$portfolio. J'ai hâte d'échanger avec vous et de contribuer à des projets ambitieux en apportant des solutions performantes, innovantes et visuellement soignées.",
+            "en": "Thank you for visiting my *$portfolio. I look forward to discussing and contributing to ambitious projects by providing high-performance, innovative, and visually refined solutions."
          }
       }
+
    }
 }

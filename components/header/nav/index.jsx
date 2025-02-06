@@ -17,8 +17,8 @@ export default function Index() {
          href: "/",
       },
       {
-         title: getSharedContent("header.links.playbook.title"),
-         href: "/playbook",
+         title: getSharedContent("header.links.projects.title"),
+         href: "/projects",
       },
       {
          title: getSharedContent("header.links.about.title"),

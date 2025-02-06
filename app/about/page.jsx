@@ -1,12 +1,11 @@
 "use client";
 import Page from "@/components/page";
 import React from "react";
-import useLangChangeObserver from "@/assets/scripts/langChangeObserver";
 import getAboutContent from "@/assets/content/getAboutContent";
 import MoreAbout from "@/components/aboutPage/more/more-about";
+import {motion} from "framer-motion";
 
 function AboutPage() {
-   const language = useLangChangeObserver();
    const cv = getAboutContent("hero.cv.text");
    const cvLink = getAboutContent("hero.cv.download");
    const desc1 = getAboutContent("hero.desc.1");
@@ -40,13 +39,18 @@ function AboutPage() {
                <div className="flex items-center flex-col">
                   <div className="flex justify-between h-screen items-center w-10/12 portrait:flex-col portrait:item-center portrait:justify-center">
                      <div>
-                        <div>
-                           <a href={cvLink} download={cvLink}>
-                              <p className="hover:scale-110 transition-all p-5 portrait:hidden">
-                                 {cv}
-                              </p>
+                        <motion.div
+                            whileHover={{ scale: 1.15 }}
+                            onHoverStart={(e) => {}}
+                            onHoverEnd={(e) => {}}
+                            className="items-center flex duration-300 portrait:hidden mb-3"
+                        >
+                           <a href={cvLink} target={"_blank"}
+                              className={`bg-primary-light items-center flex px-4 dark:bg-primary-dark h-12 rounded-full text-background-light dark:!text-background-dark text-xl duration-300 delay-500`}
+                           >
+                              <p>{cv}</p>
                            </a>
-                        </div>
+                        </motion.div>
                         <div>
                            <h1 className="portrait:relative absolute lg:text-9xl md:text-8xl sm:text-7xl text-5xl font-hero text-primary-light dark:text-primary-dark">
                               Clément Omnès
@@ -60,13 +64,18 @@ function AboutPage() {
                            className="w-full h-full object-cover rounded-lg"
                         />
                      </div>
-                     <div className="hidden portrait:block">
-                        <a href="" download={cvLink}>
-                           <p className="hover:scale-110 transition-all p-5 hidden portrait:block">
-                              {cv}
-                           </p>
+                     <motion.div
+                         whileHover={{ scale: 1.15 }}
+                         onHoverStart={(e) => {}}
+                         onHoverEnd={(e) => {}}
+                         className="items-center flex duration-300 hidden portrait:block mt-3"
+                     >
+                        <a href={cvLink} target={"_blank"}
+                           className={`bg-primary-light dark:bg-primary-dark items-center flex px-4 h-12 rounded-full text-background-light dark:!text-background-dark text-xl duration-300 delay-500`}
+                        >
+                           {cv}
                         </a>
-                     </div>
+                     </motion.div>
                   </div>
                   <div className="w-8/12 portrait:w-10/12 lg:text-3xl md:text-2xl text-xl mb-36 mt-[15rem] portrait:mt-10">
                      <p>{detectImportantWords(desc1)}</p>

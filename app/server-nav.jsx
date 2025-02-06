@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 import Loader from "./loader";
 
 export const useLoadThemeAndLanguage = () => {
-   // loadThemeAndLanguage.js
    const [isLoading, setIsLoading] = useState(true);
    const [isLoadingPage, setIsLoadingPage] = useState(true);
 
@@ -24,7 +23,6 @@ export const useLoadThemeAndLanguage = () => {
    }, []);
 
    useEffect(() => {
-      // Ecouteur d'évènement thème du navigateur
       if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
          localStorage.setItem("theme", "dark");
          document.documentElement.classList.add("dark");
@@ -45,23 +43,28 @@ export const useLoadThemeAndLanguage = () => {
 
    return { isLoading, isLoadingPage };
 };
+
 console.log(
-   "%c Dev by Clément Omnès — https://clementomnes.dev/",
-   "background: #2D232E; color: #FF521C;"
+    "%c Dev by Clément Omnès — https://clementomnes.dev/",
+    "background: #2D232E; color: #FF521C;"
 );
 
 function ServerNav({ children }) {
    const { isLoading, isLoadingPage } = useLoadThemeAndLanguage();
 
    return (
-      <>
-         <AnimatePresence key={"unique-key-for-parent"}>
-            {isLoading && <Loader key="loader" />}
-         </AnimatePresence>
-         {!isLoadingPage && (
-            <AnimatePresence key={"unique-key-for"}>{children}</AnimatePresence>
-         )}
-      </>
+       <>
+          <AnimatePresence>
+             {isLoading && <Loader key="loader" />}
+          </AnimatePresence>
+          {!isLoadingPage && (
+              <AnimatePresence>
+                 {React.Children.map(children, (child, index) =>
+                     React.cloneElement(child, { key: `child-${index}` })
+                 )}
+              </AnimatePresence>
+          )}
+       </>
    );
 }
 

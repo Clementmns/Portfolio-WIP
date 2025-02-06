@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import row1 from "./data/row1.json";
 import row2 from "./data/row2.json";
@@ -40,13 +40,13 @@ function MoreAbout(props) {
             <RiArrowDropDownLine className="h-24 w-24" />
          </motion.div>
          <motion.div
-            className="flex justify-between w-full overflow-hidden max-h-10 portrait:flex-col portrait:items-center"
-            animate={{ maxHeight: showInfo ? "45rem" : "2.5rem" }}
+            className="flex justify-between w-full max-h-10 overflow-hidden portrait:flex-col portrait:items-center"
+            animate={{ maxHeight: showInfo ? "70rem" : "2.5rem" }}
             transition={{ duration: 0.3 }}
          >
             {Object.keys(rows).map((key) => (
                <div
-                  key={key}
+                  key={key+Math.random()}
                   className="portrait:mt-5 portrait:mb-5  mb-14 w-1/4 portrait:w-full"
                >
                   <h4 className="font-hero uppercase lg:text-4xl md:text-4xl sm:text-4xl text-4xl dark:text-primary-dark text-primary-light mt-10 text-center w-full">

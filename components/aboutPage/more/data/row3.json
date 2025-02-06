@@ -7,13 +7,13 @@
             "Force de proposition",
             "Travail d'équipe"
          ],
-         "general": ["Curieux", "Créatif", "Autonome"],
+         "general": ["Curieux", "Adaptabilité", "Créatif", "Autonome"],
          "corporate": ["SCRUM", "Gestion du temps"],
          "software": ["Jira", "BitBucket"]
       }
    },
    "en": {
-      "title": "03. Soft Skills",
+      "title": "Soft Skills",
       "values": {
          "communication": [
             "Stress management",

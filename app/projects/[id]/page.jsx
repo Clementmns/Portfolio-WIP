@@ -64,6 +64,37 @@ export default function ProjectDetail() {
       {
          id: 0,
          fr: {
+            title: "ALM Votes",
+            role: [
+               "Développeur Front",
+               "Développeur Back",
+               "Architecte Base de Données",
+               "Responsable de livraison"
+            ],
+            desc: "Dans le cadre d’un projet pour un club de basket, j’ai développé une application permettant aux supporters de voter en temps réel pour le meilleur joueur du match. L’objectif était d’offrir une expérience interactive et d’engager davantage la communauté autour des performances des joueurs. L’application permet aux utilisateurs de voter en direct, avec une visualisation en temps réel des résultats. Un dashboard administrateur a été mis en place pour gérer les joueurs et les matchs, avec des fonctionnalités de création, modification et suppression, ainsi qu’une section analytics permettant d’analyser les tendances et performances des joueurs. Pour assurer des performances optimales, j’ai utilisé Next.js pour le développement front-end, Tailwind CSS pour le style, Drizzle ORM pour la gestion des requêtes SQL et MySQL comme base de données. J’ai conçu et développé cette application de A à Z, en intégrant toutes les fonctionnalités et en optimisant l’expérience utilisateur et l’administration des votes.",
+         },
+         en: {
+            title: "ALM Vote Manager",
+            role: [
+               "Front-End Developer",
+               "Back-End Developer",
+               "Database Conceptor",
+               "Delivery Manager"
+            ],
+            desc: "As part of a project for a basketball club, I developed an application that allows supporters to vote in real time for the best player of the match. The goal was to create an interactive experience and increase community engagement around player performances. The application enables users to cast their votes live, with real-time visualization of the results. An admin dashboard was implemented to manage players and matches, featuring creation, modification, and deletion functionalities, along with an analytics section to track trends and player performance. To ensure optimal performance, I used Next.js for front-end development, Tailwind CSS for styling, Drizzle ORM for database queries, and MySQL as the database. I designed and built this application from start to finish, integrating all functionalities and optimizing both the user experience and vote administration.",
+         },
+         year: "2023-2024",
+         stacks: ["Next.JS", "React.JS", "MySQL", "Tailwind.CSS"],
+         imgHero: "/projectsImages/5/hero.webp",
+         img1: "/projectsImages/5/1.webp",
+         img2: "/projectsImages/5/2.webp",
+         img3: "/projectsImages/5/3.webp",
+         link: "https://alm-app.vercel.app/",
+         linkPreview: "alm.app",
+      },
+      {
+         id: 1,
+         fr: {
             title: "Portfolio 2024",
             role: [
                "UX / UI Designer",
@@ -93,7 +124,7 @@ export default function ProjectDetail() {
          linkPreview: "clementomnes.dev",
       },
       {
-         id: 1,
+         id: 2,
          fr: {
             title: "GreenShift",
             role: [
@@ -120,11 +151,9 @@ export default function ProjectDetail() {
          img1: "/projectsImages/4/1.webp",
          img2: "/projectsImages/4/2.webp",
          img3: "/projectsImages/4/3.webp",
-         // link: "https://clementomnes.dev",
-         // linkPreview: "clementomnes.dev",
       },
       {
-         id: 2,
+         id: 3,
          fr: {
             title: "Dashboard",
             role: ["Développeur", "Analiste", "Concepteur"],
@@ -145,7 +174,7 @@ export default function ProjectDetail() {
          // linkPreview: "dashboard.dev",
       },
       {
-         id: 3,
+         id: 4,
          fr: {
             title: "AppTrackr",
             role: ["Développeur", "Architecte Base de Données"],
@@ -166,7 +195,7 @@ export default function ProjectDetail() {
          // linkPreview: "apptrackr.dev",
       },
       {
-         id: 4,
+         id: 5,
          fr: {
             title: "CIKLab",
             role: ["Chef de projet", "Motion Design", "Relation client"],
