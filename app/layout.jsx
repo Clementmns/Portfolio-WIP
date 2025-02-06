@@ -8,7 +8,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 export const metadata = {
    title: "Clément Omnès - Software Developer",
    description:
-      "Découvrez le portfolio de Clément OMNÈS, étudiant en BUT Métiers du Multimédia et de l'Internet, " +
+      "Découvrez le portfolio de Clément OMNÈS, étudiant " +
       "spécialisé en développement logiciel et en marketing digital.",
 };
 
