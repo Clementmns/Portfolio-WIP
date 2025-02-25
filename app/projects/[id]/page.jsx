@@ -62,6 +62,35 @@ export default function ProjectDetail() {
    // PROJETS
    const projects = [
       {
+         id: 6,
+         fr: {
+            title: "Selenite",
+            role: [
+               "Lead Développeur Unity",
+               "Chef de projet",
+               "Responsable de livraison"
+            ],
+            desc: "Selenite: Lost Contact est un jeu vidéo de simulation et d’exploration, développé par la Team Selenite (aussi appelée Selenite Studio) dans le cadre de la Situation d’Apprentissage et d’Évaluation (SAE) du semestre 5 du BUT MMI. Ce projet éducatif plonge les joueurs dans une bataille de vaisseaux sur la Lune. En effet, la colonie lunaire laisse la maison mère sans nouvelles depuis quelque temps. Alex Carter, pilote de renom, est choisi pour une mission de reconnaissance sur la Lune, mais il y découvre une menace inattendue. Il devra donc combattre les ennemis et détruire des avant-postes pour vaincre cette menace. Pour plus d’informations, consultez la fiche produit et le rapport de production.",
+         },
+         en: {
+            title: "Selenite",
+            role: [
+               "Lead Unity Developer",
+               "Project Manager",
+               "Delivery Manager"
+            ],
+            desc: "Selenite: Lost Contact is a simulation and exploration video game developed by Team Selenite (also known as Selenite Studio) as part of the Learning and Assessment Situation (SAE) for the 5th semester of the BUT MMI program. This educational project immerses players in a spaceship battle on the Moon. The lunar colony has gone silent, leaving the mother planet without any news for some time. Alex Carter, a renowned pilot, is chosen for a reconnaissance mission on the Moon, but he soon discovers an unexpected threat. He must fight enemies and destroy outposts to overcome this danger. For more information, check out the product sheet and the production report.",
+         },
+         year: "2024-2025",
+         stacks: ["Unity", "C#"],
+         imgHero: "/projectsImages/6/hero.webp",
+         img1: "/projectsImages/6/1.webp",
+         img2: "/projectsImages/6/2.webp",
+         img3: "/projectsImages/6/3.webp",
+         link: "https://selenite.live/",
+         linkPreview: "selenite.live",
+      },
+      {
          id: 0,
          fr: {
             title: "ALM Votes",
@@ -170,8 +199,6 @@ export default function ProjectDetail() {
          img1: "/projectsImages/1/1.webp",
          img2: "/projectsImages/1/2.webp",
          img3: "/projectsImages/1/3.webp",
-         // link: "https://google.com",
-         // linkPreview: "dashboard.dev",
       },
       {
          id: 4,
@@ -191,8 +218,6 @@ export default function ProjectDetail() {
          img1: "/projectsImages/2/1.webp",
          img2: "/projectsImages/2/2.webp",
          img3: "/projectsImages/2/3.webp",
-         // link: "https://google.com",
-         // linkPreview: "apptrackr.dev",
       },
       {
          id: 5,

@@ -9,7 +9,7 @@
          ],
          "general": ["Curieux", "Adaptabilité", "Créatif", "Autonome"],
          "corporate": ["SCRUM", "Gestion du temps"],
-         "software": ["Jira", "BitBucket"]
+         "software": ["Jira", "BitBucket", "Git"]
       }
    },
    "en": {
@@ -22,7 +22,7 @@
          ],
          "general": ["Curious", "Adaptability", "Creativity", "Autonomy"],
          "corporate": ["SCRUM", "Time management"],
-         "software": ["Jira", "BitBucket"]
+         "software": ["Jira", "BitBucket", "Git"]
       }
    }
 }

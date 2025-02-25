@@ -2,17 +2,17 @@
    "fr": {
       "title": "Développement",
       "values": {
-         "languages": ["JavaScript", "PHP", "MySQL", "Java"],
+         "languages": ["JavaScript", "PHP", "MySQL", "Java", "C#"],
          "librairies": ["Tailwind.CSS", "Material.UI", "Jquery", "React.JS"],
-         "frameworks": ["GSAP", "Next.js", "CodeIgniter", "Spring Boot"]
+         "frameworks": ["GSAP", "Next.js", "CodeIgniter", "Spring Boot", "Unity"]
       }
    },
    "en": {
       "title": "Development",
       "values": {
-         "langages": ["JavaScript", "PHP", "MySQL", "Java"],
-         "librairies": ["Tailwind.CSS","Material.UI", "Jquery", "React.JS"],
-         "frameworks": ["GSAP", "Next.js", "CodeIgniter", "Spring Boot"]
+         "languages": ["JavaScript", "PHP", "MySQL", "Java", "C#"],
+         "librairies": ["Tailwind.CSS", "Material.UI", "Jquery", "React.JS"],
+         "frameworks": ["GSAP", "Next.js", "CodeIgniter", "Spring Boot", "Unity"]
       }
    }
 }

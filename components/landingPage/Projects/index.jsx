@@ -110,6 +110,12 @@ function LandingProjects() {
 
    const projects = [
       {
+         id: 6,
+         title: "Selenite : Lost Contact",
+         stacks: ["Unity", "C#"],
+         img: "/projectsThumbnails/selenite.webp",
+      },
+      {
          id: 0,
          title: "ALM Vote Manager",
          stacks: ["Next.JS", "React.JS", "MySQL", "TailwindCSS"],
