@@ -5,8 +5,17 @@
 @font-face {
    font-family: "PPTelegraf";
    src: url("../assets/fonts/PPTelegrafOTF.otf");
+   font-style: normal;
+   font-weight: normal;
 }
 @font-face {
    font-family: "Rafgins";
    src: url("../assets/fonts/RafginsOTF.otf");
+   font-style: normal;
+   font-weight: 400;
+   font-display: swap;
+}
+
+body {
+   font-family: "PPTelegraf", "Rafgins", Arial, sans-serif;
 }

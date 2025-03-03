@@ -1,9 +1,6 @@
-import "./global.scss";
+import "./global.css";
 import ServerNav from "./server-nav";
-import { Analytics } from "@vercel/analytics/react";
 import Header from "@/components/header";
-
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
    title: "Clément Omnès - Software Developer",
@@ -23,8 +20,6 @@ export default function RootLayout({ children }) {
                <Header />
                {children}
             </ServerNav>
-            <Analytics />
-            <SpeedInsights />
          </body>
       </html>
    );
