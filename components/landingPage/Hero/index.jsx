@@ -56,7 +56,7 @@ function LandingHeroBanner() {
          </div>
          <div
             className="layer w-[50vw] h-[100vh] mt-28 portrait:w-[95vw] portrait:h-[80vh]"
-            data-speed={isPortrait ? "0" : "1"}
+            data-speed={isPortrait ? "0" : "0.5"}
          >
             <img
                src="/me.webp"

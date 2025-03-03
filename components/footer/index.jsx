@@ -14,18 +14,29 @@ export default function Footer() {
 				</div>
 				<div className="flex flex-col justify-center items-center gap-14">
 					<HoverEffect text="clement.mns.pro@gmail.com" color={"inverse"} width={"60vw"} link="mailto:clement.mns.pro@gmail.com" />
-					<motion.a
-						whileHover={{ scale: 1.15 }}
-						onHoverStart={(e) => {}}
-						onHoverEnd={(e) => {}}
-						href="https://bento.me/clement-omnes"
-						className="h-8 rounded-full bg-background-light dark:bg-background-dark text-primary-light dark:text-primary-dark p-6 text-xl flex justify-center items-center w-32"
-					>
-						bento.me
-					</motion.a>
+					<div className="flex justify-center w-full gap-4">
+						<motion.a
+							whileHover={{ scale: 1.15 }}
+							onHoverStart={(e) => {}}
+							onHoverEnd={(e) => {}}
+							href="https://bento.me/clement-omnes"
+							className="h-8 rounded-full bg-background-light dark:bg-background-dark text-primary-light dark:text-primary-dark p-6 text-xl flex justify-center items-center w-32"
+						>
+							bento.me
+						</motion.a>
+						<motion.a
+							whileHover={{ scale: 1.15 }}
+							onHoverStart={(e) => {}}
+							onHoverEnd={(e) => {}}
+							href="https://github.com/Clementmns"
+							className="h-8 rounded-full bg-background-light dark:bg-background-dark text-primary-light dark:text-primary-dark p-6 text-xl flex justify-center items-center w-32"
+						>
+							github
+						</motion.a>
+					</div>
 				</div>
 				<div className="flex !justify-start text-xs text-background-light dark:text-background-dark mb-4">
-					<p>Clément Omnès © - Made with passion - 2024</p>
+					<p>Clément Omnès © - Made with passion - 2025</p>
 				</div>
 			</div>
 		</>

@@ -1,6 +1,6 @@
 import LandingDescription from "@/components/landingPage/Description";
+import LandingExperiences from "@/components/landingPage/Experiences";
 import LandingHeroBanner from "@/components/landingPage/Hero";
-import LandingProjects from "@/components/landingPage/Projects";
 import Page from "@/components/page";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
          <Page>
             <LandingHeroBanner />
             <LandingDescription />
-            <LandingProjects />
+            <LandingExperiences />
          </Page>
       </>
    );

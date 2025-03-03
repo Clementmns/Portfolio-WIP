@@ -36,7 +36,7 @@ function LandingDescription() {
    }, []);
 
    return (
-      <div className="h-[70vh] flex justify-center items-center w-full mt-[20vh] portrait:mt-[30vw]">
+      <div className="h-[70vh] flex justify-center items-center w-full mt-0 portrait:mt-[20vw]">
          <div className="flex justify-center items-center flex-col h-full w-8/12 text-center">
             <div className="startMaskWord dark:text-background-light text-background-dark lg:text-6xl md:text-5xl sm:text-3xl text-2xl ">
                <h2>
