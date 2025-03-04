@@ -13,6 +13,7 @@ export default function RootLayout({ children }) {
    return (
       <html lang="fr">
          <head>
+            <link rel="stylesheet" href="https://use.typekit.net/oqc3tpj.css"/>
             <link rel="shortcut icon" href="/fav.ico" type="image/x-icon" />
          </head>
          <body className="w-full">

@@ -73,7 +73,8 @@ export default function ProjectDetail() {
 			img3: "/projectsImages/0/3.webp",
 			link: "https://selenite.live/",
 			linkPreview: "selenite.live",
-			github: ""
+			github: "https://github.com/selenite-live",
+			githubPreview: "selenite-live.git"
 		},
 		{
 			id: "alm-vote",
@@ -95,7 +96,6 @@ export default function ProjectDetail() {
 			img3: "/projectsImages/1/3.webp",
 			link: "https://alm-app.vercel.app/",
 			linkPreview: "alm.app",
-			github: ""
 		},
 		{
 			id: "portfolio-2024",
@@ -117,7 +117,8 @@ export default function ProjectDetail() {
 			img3: "/projectsImages/2/3.webp",
 			link: "https://clementomnes.dev",
 			linkPreview: "clementomnes.dev",
-			github: ""
+			github: "https://github.com/clementmns/portfolio-2024",
+			githubPreview: "portfolio-2024.git"
 		},
 		{
 			id: "greenshift",
@@ -137,7 +138,8 @@ export default function ProjectDetail() {
 			img1: "/projectsImages/3/1.webp",
 			img2: "/projectsImages/3/2.webp",
 			img3: "/projectsImages/3/3.webp",
-			github: ""
+			github: "https://github.com/clementmns/greenshift",
+			githubPreview: "greenshift.git",
 		},
 		{
 			id: "dashboard",
@@ -157,7 +159,8 @@ export default function ProjectDetail() {
 			img1: "/projectsImages/4/1.webp",
 			img2: "/projectsImages/4/2.webp",
 			img3: "/projectsImages/4/3.webp",
-			github: ""
+			github: "https://github.com/clementmns/Dashboard",
+			githubPreview: "dashboard.git"
 		},
 		{
 			id: "apptrackr",
@@ -176,8 +179,7 @@ export default function ProjectDetail() {
 			imgHero: "/projectsImages/5/hero.webp",
 			img1: "/projectsImages/5/1.webp",
 			img2: "/projectsImages/5/2.webp",
-			img3: "/projectsImages/5/3.webp",
-			github: ""
+			img3: "/projectsImages/5/3.webp"
 		}
 	];
 
@@ -280,6 +282,14 @@ export default function ProjectDetail() {
 											<div>
 												<a href={selectedProject.link} className="hover:underline">
 													{selectedProject.linkPreview}
+												</a>
+											</div>
+										</div>
+										<div>
+											<h2 className="lg:text-xl text-primary-light dark:text-primary-dark md:text-lg sm:text-sm text-xs grow-[3]">{selectedProject.github ? "GitHub" : ""}</h2>
+											<div>
+												<a href={selectedProject.github} className="hover:underline">
+													{selectedProject.githubPreview}
 												</a>
 											</div>
 										</div>

@@ -18,7 +18,6 @@ function AboutPage() {
       const importantWordsRegex = /\*\$([^,\s]+)/g;
       return description.split(importantWordsRegex).map((part, index) => {
          if (index % 2 === 1) {
-            // Les mots importants correspondent aux index impairs
             return (
                <span
                   key={index}

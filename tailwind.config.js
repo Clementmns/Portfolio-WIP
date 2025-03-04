@@ -13,8 +13,8 @@ module.exports = {
             hero: "14rem",
          },
          fontFamily: {
-            basic: ['"PPTelegraf", sans-serif'],
-            hero: ['"Rafgins", sans-serif'],
+            basic: ['"degular", sans-serif'],
+            heroUse: ['"freight-big-pro", sans-serif'],
          },
          colors: {
             "primary-light": "#FF521C",
