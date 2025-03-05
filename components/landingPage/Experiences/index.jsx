@@ -5,6 +5,14 @@ import { motion, useInView } from "framer-motion";
 export default function LandingExperiences() {
 	const experiences = [
 		{
+			id: 0,
+			title: "OpQuast - 875/1000",
+			company: "MMI",
+			period: "2025",
+			description: "Certified OpQuast Professional with a score of 875/1000. Learned about web quality and accessibility.",
+			skills: ["OpQuast", "Web Accessibility", "SEO"]
+		},
+		{
 			id: 1,
 			title: "Java / React Developer - Apprenticeship",
 			company: "R3mScore",
