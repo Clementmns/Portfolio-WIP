@@ -4,8 +4,10 @@ import React from "react";
 import getAboutContent from "@/assets/content/getAboutContent";
 import MoreAbout from "@/components/aboutPage/more/more-about";
 import {motion} from "framer-motion";
+import useLangChangeObserver from "@/assets/scripts/langChangeObserver";
 
 function AboutPage() {
+   const language = useLangChangeObserver();
    const cv = getAboutContent("hero.cv.text");
    const cvLink = getAboutContent("hero.cv.download");
    const desc1 = getAboutContent("hero.desc.1");
