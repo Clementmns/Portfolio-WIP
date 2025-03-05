@@ -1,50 +1,96 @@
 {
-  "selenite": {
-    "heading": {
-      "fr": "Selenite - Lost Contact",
-      "en": "Selenite - Lost Contact"
+	"selenite": {
+		"heading": {
+			"fr": "Selenite - Lost Contact",
+			"en": "Selenite - Lost Contact"
+		},
+		"subheading": {
+			"fr": "Développement de Jeu C# Unity",
+			"en": "C# Unity Game Development"
+		},
+		"description": {
+			"fr": "Selenite est un jeu d'aventure 3D immersif développé avec Unity en C#.",
+			"en": "Selenite is an immersive 3D adventure game developed in Unity using C#."
+		},
+		"buttonText": {
+			"fr": "Voir les détails du projet",
+			"en": "View project details"
+		},
+		"feature1": {
+			"title": {
+				"fr": "Détruisez le canon",
+				"en": "Destroy the cannon"
+			},
+			"description": {
+				"fr": "Un canon vise la Terre, vous devez le détruire avant qu'il ne soit trop tard...",
+				"en": "A cannon is aiming at Earth, you must destroy it before it's too late..."
+			}
+		},
+		"feature2": {
+			"title": {
+				"fr": "Combattez des vagues d'ennemis",
+				"en": "Fight waves of enemies"
+			},
+			"description": {
+				"fr": "Un combat avec des vagues d'ennemis qui testera vos compétences.",
+				"en": "An battle with waves of enemies that will test your skills."
+			}
+		},
+		"feature3": {
+			"title": {
+				"fr": "Améliorez votre équipement",
+				"en": "Upgrade your equipment"
+			},
+			"description": {
+				"fr": "Améliorez des compétences pour vous aider à survivre dans ce monde hostile.",
+				"en": "Upgrade skills to help you survive in this hostile world."
+			}
+		}
+	},
+	"experiences": {
+		"experiences_title": {
+			"fr": "Expériences",
+			"en": "Experiences"
+		},
+		"opquast_title": {
+			"fr": "OpQuast - 875/1000",
+			"en": "OpQuast - 875/1000"
+		},
+		"mmi": {
+			"fr": "MMI",
+			"en": "MMI"
+		},
+		"opquast_description": {
+			"fr": "Certifié OpQuast Professionnel avec un score de 875/1000. Apprentissage de la qualité web et de l'accessibilité.",
+			"en": "Certified OpQuast Professional with a score of 875/1000. Learned about web quality and accessibility."
+		},
+		"skill_web_accessibility": {
+			"fr": "Accessibilité Web",
+			"en": "Web Accessibility"
+		},
+    "skill_chat_gpt_integration": {
+      "fr": "Intégration Chat GPT",
+      "en": "Chat GPT Integration"
     },
-    "subheading": {
-      "fr": "Développement de Jeu C# Unity",
-      "en": "C# Unity Game Development"
+    "skill_api_integration": {
+      "fr": "Intégration API",
+      "en": "API Integration"
     },
-    "description": {
-      "fr": "Selenite est un jeu d'aventure 3D immersif développé avec Unity en C#.",
-      "en": "Selenite is an immersive 3D adventure game developed in Unity using C#."
-    },
-    "buttonText": {
-      "fr": "Voir les détails du projet",
-      "en": "View project details"
-    },
-    "feature1": {
-      "title": {
-        "fr": "Détruisez le canon",
-        "en": "Destroy the cannon"
-      },
-      "description": {
-        "fr": "Un canon vise la Terre, vous devez le détruire avant qu'il ne soit trop tard...",
-        "en": "A cannon is aiming at Earth, you must destroy it before it's too late..."
-      }
-    },
-    "feature2": {
-      "title": {
-        "fr": "Combattez des vagues d'ennemis",
-        "en": "Fight waves of enemies"
-      },
-      "description": {
-        "fr": "Un combat avec des vagues d'ennemis qui testera vos compétences.",
-        "en": "An battle with waves of enemies that will test your skills."
-      }
-    },
-    "feature3": {
-      "title": {
-        "fr": "Améliorez votre équipement",
-        "en": "Upgrade your equipment"
-      },
-      "description": {
-        "fr": "Améliorez des compétences pour vous aider à survivre dans ce monde hostile.",
-        "en": "Upgrade skills to help you survive in this hostile world."
-      }
-    }
-  }
+		"java_react_developer": {
+			"fr": "Développeur Java / React - Apprentissage",
+			"en": "Java / React Developer - Apprenticeship"
+		},
+		"java_react_description": {
+			"fr": "Aide au développement d'applications utilisant Java et React. Intégration de Chat GPT pour des tâches complexes.",
+			"en": "Assisted in developing applications using Java and React. Integrated Chat GPT for complex tasks."
+		},
+		"react_developer": {
+			"fr": "Développeur React - Stage",
+			"en": "React Developer - Internship"
+		},
+		"react_description": {
+			"fr": "Aide au développement d'applications utilisant React. Apprentissage de l'intégration d'APIs et du développement de composants.",
+			"en": "Assisted in developing applications using React. Learned how to integrate APIs and develop components."
+		}
+	}
 }
